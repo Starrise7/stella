@@ -16,6 +16,7 @@
          display: flex;
          flex-direction: column;
          gap: 10px;
+         
       }
 
       input {
@@ -121,7 +122,7 @@
    `.trim();
    
             document.getElementById("output").value = code;
-            document.getElementById("copyBtn").style.display = "inline";
+            document.getElementById("copyBtn").style.visibility = "visible";
             document.getElementById("output").style.visibility = "visible";
          }
    
@@ -151,7 +152,7 @@
    <div class="row">
    <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
 
-   <textarea style="display: none;" id="output" rows="10" cols="60" readonly></textarea>
+   <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
    
 </body>
 
