@@ -122,7 +122,7 @@
    
             document.getElementById("output").value = code;
             document.getElementById("copyBtn").style.display = "inline";
-            document.getElementById("output").style.display = "inline";
+            document.getElementById("output").style.visibility = "visible";
          }
    
          function copyCode() {
@@ -149,7 +149,7 @@
    <div class="row"><label>عکس شماره 3</label><input type="text" id="img3" value="https://s8.uupload.ir/files/h3_9jre.png"><br></div>
 
    <div class="row">
-   <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="display: none;">کپی کد</button><br></div>
+   <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
 
    <textarea style="display: none;" id="output" rows="10" cols="60" readonly></textarea>
    
