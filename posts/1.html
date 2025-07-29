@@ -91,7 +91,7 @@
          gap: 30px;
          max-width: 100%;
       }
-
+      
       .knowmore{
          font-size: 10px;
          width: 70px;
@@ -165,14 +165,14 @@
 </head>
 
 <body>
-
+<div class="main">
    <div class="row"><label>عکس پسزمینه</label><input type="text" id="bgurl"><br></div>
    <div class="row"><label>رنگ پسزمینه</label><input type="color" id="bgcolor" value="#eeeeee"><br></div>
    <div class="row"><label>رنگ هدر</label><input type="color" id="header" value="#ffdbe8"><br></div>
    <div class="row"><label>رنگ عنوان پست ها</label><input type="color" id="post" value="#c4eafd"><br></div>
    <div class="row"><label>رنگ عنوان های سایدبار</label><input type="color" id="sidebar" value="#ffe6a9"><br></div>
    <div class="row"><label>رنگ لینک ها در حالت عادی</label><input type="color" id="link1" value="#ff9fbe"><br></div>
-   <div class="row"><label>رنگ لینک ها در حالت هاور</label><input type="color" id="link2" value="#9ed0ff"><br></div>
+   <div class="row"><label>رنگ لینک ها در حالت هاور</label><input type="color" id="link2" value="#9ed0ff"><button onclick="KnowMore()" class="knowmore">بیشتر بدانید</button><br></div>
    <div class="row"><label>عکس شماره 1</label><input type="text" id="img1" value="https://s8.uupload.ir/files/h1_bn7j.png"><br></div>
    <div class="row"><label>عکس شماره 2</label><input type="text" id="img2" value="https://s8.uupload.ir/files/h2_y3m.png"><br></div>
    <div class="row"><label>عکس شماره 3</label><input type="text" id="img3" value="https://s8.uupload.ir/files/h3_9jre.png"><br></div>
@@ -181,7 +181,6 @@
    <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
 
    <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
-   
+</div>
 </body>
-
 </html>
