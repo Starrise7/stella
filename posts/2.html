@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <link href="https://v1.fontapi.ir/css/Shabnam" rel="stylesheet">
+   <style>
+      ::selection{
+         background: #5A7D52;
+         color: white;
+      }
+      
+      body {
+         direction: rtl;
+         font-family: shabnam, tahoma;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         
+      }
+
+      input {
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+      }
+
+      textarea {
+         width: 300px;
+         height: 150px;
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+         resize: none;
+      }
+
+      textarea::-webkit-scrollbar{
+         display: none;
+      }
+
+      input[type="color"] {
+         padding: 0;
+         width: 70px;
+         background: 0;
+      }
+
+      button {
+         text-align: center;
+         border: none;
+         cursor: pointer;
+         font-family: var(--font);
+         background: #5A7D52;
+         padding: 10px 0;
+         color: white;
+         width: 100px;
+         border-radius: 10px;
+         font-weight: bold;
+         font-size: 14px;
+      }
+
+      button:hover {
+         background-color: #3E5F36;
+      }
+
+      .row{
+         display: flex;
+         align-items: center;
+         gap: 30px;
+      }
+      
+   </style>
+      <script>
+         function generateCode() {
+            const bgurl = document.getElementById("bgurl").value;
+            const bgcolor = document.getElementById("bgcolor").value;
+            const img = document.getElementById("img").value;
+            const color = document.getElementById("color").value;
+            const code = `
+<!DOCTYPE html> <html>
+<!-- Theme BY : Stella.BlogFa.Com -->
+<head> <link href="<-BlogPhotoLink->" rel="shortcut icon"> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title><-BlogAndPostTitle-></title> <meta http-equiv="content-language" content="fa"> <meta name="description" content="<-BlogMetaDescription->"> <meta name="generator" content="blogfa.com"> <meta property="og:title" content="<-AutoPageTitle->"> <meta property="og:site_name" content="<-BlogTitle->"> <meta property="og:description" content="<-BlogMetaDescription->"> <meta name="twitter:title" content="<-AutoPageTitle->"> <meta name="twitter:description" content="<-BlogMetaDescription->"> <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" /> <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/nahid-font@v0.3.0/dist/font-face.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> <style>
+        /* محل تغییر ظاهر قالب */
+        :root {
+
+            /* بدنه */
+            --body: ${color} url(${img});
+
+            /* بکگراند */
+            --background: ${bgcolor} url(${bgurl}) fixed;
+
+        }
+* { margin: 0px auto; padding: 0px; } p { margin-top: 1em; margin-bottom: 1em; } body { margin: 0; padding: 0; background: var(--background); font-family: nahid, Tahoma; font-size: 9pt; } #stella { min-height: 550px; width: 600px; max-width: 100%; margin-bottom: 10px; direction: rtl; display: flex; flex-direction: column; gap: 20px; } #navbarbg { background: var(--body); border-radius: 0 0 15px 15px; padding: 0 20px 20px 20px; width: 100%; box-sizing: border-box; } #navbar { background: #fff; padding: 10px; border-radius: 0 0 10px 10px; display: flex; justify-content: space-between; } #navbar a { color: #bbb; font-size: 30px; font-weight: none; transition: 0.5s; } #navbar a:hover { color: #666; } #hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; } #hero h1 a { font-size: 16pt; text-decoration: none; } #hero h2 { color: #666; font-size: 9pt; font-weight: normal; background: none; } #hero img { border: 1px solid #666; border-radius: 50%; transition: 1s; } #hero img:hover { transform: rotate(360deg); } #content { width: 100%; min-height: 300px; overflow: hidden; background: var(--body); border-radius: 15px; padding: 20px; box-sizing: border-box; } A { color: #666; text-decoration: none; Font-weight: bold; transition: 1s; } A:hover { color: #000; text-decoration: none; } .post { background: #fff; padding: 10px; text-align: right; padding-bottom: 15px; color: #3d3d3d; font-size: 10pt; border-radius: 10px; margin-bottom: 20px; } .post h2 { font-size: 20px; font-weight: bold; text-align: center; padding: 10px; background: #eee; border-radius: 5px; margin-bottom: 10px; } img, p, div, table, td, tr, a, hr, span, ul, ol, video { max-width: 100%; height: auto;} .postinfo { font-size: 11px; color: #797979; padding: 10px 5px; background: #eee; border-radius: 5px; text-align: center; margin-top: 10px; display: flex; justify-content: space-between; } .nextandprevious { padding: 20px 10px; text-align: center; } .nextandprevious a { color: #fff; font-size: 30px; } .center { text-align: center; margin: 0; } .left { float: left; font-weight: bolder; } .right { float: right; font-weight: bolder; } @media (max-width: 450px) { .postinfo { font-size: 8px; } #navbar a { font-size: 20px; } } </style> \u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0073\u0072\u0063\u003d\u0022\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0062\u006c\u006f\u0067\u0066\u0061\u002e\u0063\u006f\u006d\u002f\u0070\u0075\u0062\u006c\u0069\u0063\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0031\u002e\u0032\u002e\u006a\u0073\u0022\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e\u0020\u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u0020\u0074\u0072\u0079\u0020\u007b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0030\u005d\u0020\u003d\u0020\u0022\u002b\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0031\u005d\u0020\u003d\u0020\u0022\u0030\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0032\u005d\u0020\u003d\u0020\u0022\u0031\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0033\u005d\u0020\u003d\u0020\u0022\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0062\u006c\u006f\u0067\u0069\u0064\u0020\u003d\u0020\u0022\u003c\u002d\u0042\u006c\u006f\u0067\u0049\u0064\u002d\u003e\u0022\u003b\u0020\u007d\u0020\u0063\u0061\u0074\u0063\u0068\u0020\u0028\u0065\u0029\u0020\u007b\u0020\u007d\u0020\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e </head> <body> <div id="stella"> <div id="navbarbg"> <div id="navbar"> <a href="<-BlogUrl->"><i class="fa-solid fa-home"></i></a> <a href="<-BlogProfileLink->"><i class="fa-solid fa-user"></i></a> <a href="mailto:<-BlogEmail->"><i class="fa-solid fa-envelope"></i></a> <a href="<-BlogArchiveLink->"><i class="fa-solid fa-calendar"></i></a> <a href="/posts/"><i class="fa-solid fa-archive"></i></a> <a href="/links"><i class="fa-solid fa-link"></i></a> <a href="/rss"><i class="fa-solid fa-rss"></i></a> <a href="http://stella.blogfa.com"><i class="fa-solid fa-paint-brush"></i></a> </div> </div> <div id="hero"> <BlogPhoto><img src="<-BlogPhotoLink->"></BlogPhoto> <h1><a href="<-BlogUrl->"><-BlogTitle-></a></h1> <h2><-BlogDescription-></h2> <BlogProfile><-BlogAbout-></BlogProfile> </div> <div id="content"> <BLOGFA> <div class="post"> <h2><a href="<-PostLink->"><-PostTitle-></a></h2> <-PostContent-> <BlogPostTagsBlock> <br><br> <span><i class="fa-solid fa-tags"> </i></span> <BlogPostTags separator="# "><a href="<-TagLink->"><-TagName-></a></BlogPostTags> </BlogPostTagsBlock> <div class="postinfo"> <span><i class="fa-solid fa-calendar-alt"></i><-PostDate-><-PostTime-></span> <a href="<-PostAuthorLink->"><i class="fa-solid fa-user"></i><-PostAuthor-></a> <span><BlogComment><i class="fa-solid fa-comment"></i> <span dir="rtl" comment-for="<-PostId->"></span></BlogComment></span> <BlogExtendedPost> <a href="<-PostLink->" class="read-more"> ادامه مطلب <i class="fa-solid fa-arrow-alt-circle-left"></i></a></BlogExtendedPost> </div> </div> </BLOGFA> <BlogNextAndPreviousBlock> <div class="nextandprevious"> <BlogPreviousPageBlock> <a href="<-BlogPreviousPageLink->"><i class="fa-solid fa-arrow-right right"></i></a> </BlogPreviousPageBlock> <a href="<-BlogUrl->"><i class="fa-solid fa-home"></i></a> <BlogNextPageBlock> <a href="<-BlogNextPageLink->"><i class="fa-solid fa-arrow-left left"></i></a> </BlogNextPageBlock> <div class="clear"></div> </div> </BlogNextAndPreviousBlock> <BlogLinksBlock> <div class="post"> <h2>دوستان</h2> <BlogLinks> <a href="<-LinkUrl->" target="_blank"> <-LinkTitle-> </a> ، </BlogLinks> </div> </BlogLinksBlock> <div class="post center"> <-BlogCustomHtml-> <p>قالب طراحی شده توسط :<a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p> </div> </div> </div>
+<!-- Theme BY : Stella.BlogFa.Com -->
+</body> </html>
+   `.trim();
+   
+            document.getElementById("output").value = code;
+            document.getElementById("copyBtn").style.visibility = "visible";
+            document.getElementById("output").style.visibility = "visible";
+         }
+   
+         function copyCode() {
+            const output = document.getElementById("output");
+            output.select();
+            output.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("کد کپی شد!");
+         }
+      </script>
+</head>
+
+<body>
+
+   <div class="row"><label>عکس پسزمینه</label><input type="text" id="bgurl"  value="https://s8.uupload.ir/files/bg_9964.png"><br></div>
+   <div class="row"><label>رنگ پسزمینه</label><input type="color" id="bgcolor" value="#eeeeee"><br></div>
+   <div class="row"><label>عکس بدنه</label><input type="text" id="img" value="https://s8.uupload.ir/files/p_y0u.png"><br></div>
+   <div class="row"><label>رنگ بدنه</label><input type="color" id="color" value="#eeeeee"><br></div>
+
+   <div class="row">
+   <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
+
+   <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
+   
+</body>
+
+</html>
