@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <link href="https://v1.fontapi.ir/css/Shabnam" rel="stylesheet">
+   <style>
+      ::selection{
+         background: #5A7D52;
+         color: white;
+      }
+      
+      body {
+         direction: rtl;
+         font-family: shabnam, tahoma;
+         margin: 0;
+      }
+
+      .main{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         max-width: 100%;
+      }
+
+      @media screen and (max-width: 400px) {
+         .row{
+            flex-direction: column;
+            gap: 5px !important;
+         }
+
+         .main{
+            gap: 5px;
+         }
+      }
+
+      input {
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+         max-width: 100%;
+         box-sizing: border-box;
+      }
+
+      textarea {
+         width: 300px;
+         height: 150px;
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+         resize: none;
+         max-width: 100%;
+         box-sizing: border-box;
+      }
+
+      textarea::-webkit-scrollbar{
+         display: none;
+      }
+
+      input[type="color"] {
+         padding: 0;
+         width: 70px;
+         background: 0;
+      }
+
+      button {
+         text-align: center;
+         border: none;
+         cursor: pointer;
+         font-family: var(--font);
+         background: #5A7D52;
+         padding: 10px 0;
+         color: white;
+         width: 100px;
+         border-radius: 10px;
+         font-weight: bold;
+         font-size: 14px;
+      }
+
+      button:hover {
+         background-color: #3E5F36;
+      }
+
+      .row{
+         display: flex;
+         align-items: center;
+         gap: 30px;
+         max-width: 100%;
+      }
+      
+   </style>
+      <script>
+         function generateCode() {
+            const bgurl = document.getElementById("bgurl").value;
+            const img1 = document.getElementById("img1").value;
+            const img2 = document.getElementById("img2").value;
+            const img3 = document.getElementById("img3").value;
+            const img4 = document.getElementById("img4").value;
+            const code = `
+<!DOCTYPE html> <html> <head>
+<!-- Theme BY : Stella.BlogFa.Com -->
+<link href="<-BlogPhotoLink->" rel="shortcut icon"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title> <-BlogAndPostTitle-> </title> <meta http-equiv="content-language" content="fa"> <meta name="description" content="<-BlogMetaDescription->"> <meta name="generator" content="blogfa.com"> <meta property="og:title" content="<-AutoPageTitle->"> <meta property="og:site_name" content="<-BlogTitle->"> <meta property="og:description" content="<-BlogMetaDescription->"> <meta name="twitter:title" content="<-AutoPageTitle->"> <meta name="twitter:description" content="<-BlogMetaDescription->"> <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" /> <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" type="text/css" rel="stylesheet"> <link rel="stylesheet" href="https://up.tempkade.ir/themes/fonts/font-awesome.min.css" type="text/css"> <style> img, p, div, table, td, tr, a, hr, span, ul, ol, video{ max-width: 100%; height: auto;} ::selection { background: #000; color: #fff; } ::-moz-selection { background: #000; color: #fff; } ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-thumb { background: #222; border: 1px solid rgba(255, 255, 255, 0.1); } * { margin: 0px auto; padding: 0px; transition: 0.5s; scroll-behavior: smooth; } img:hover { filter: brightness(120%); } body { direction: rtl; background: #161616 url(${bgurl}) fixed; font-family: 'Baloo Bhaijaan 2'; font-size: 14px; color: #fff; } #stella { min-height: 550px; width: 500px; max-width: 100%; padding: 20px 10px; display: flex; flex-direction: column; gap: 21px; box-sizing: border-box; } .menu { width: 100%; display: flex; flex-direction: column; gap: 20px; } .row { width: 100%; display: flex; gap: 20px; } .row a { text-align: center; font-size: 16px; width: 100%; background: #222; padding: 10px; border: 1px solid rgba(255, 255, 255, 0.1); } .row a:hover, .post .contentt a:hover { background: #333; } #header { text-align: center; width: 100%; height: auto; display: flex; justify-content: space-between; } .column1 { display: flex; width: 23%; min-height: 100%; justify-content: space-between; flex-direction: column; margin: 0; } .column2 { display: flex; width: 74%; height: 100%; justify-content: space-between; flex-direction: column; margin: 0; } #header img { outline: 1px rgba(255, 255, 255, 0.2) solid; outline-offset: -1px; width: 100%; height: auto; } A { color: #fff; text-decoration: none; Font-weight: bold; } A:hover { color: #fff; text-shadow: 0px 0px 5px #fff; text-decoration: none; } .post { width: 100%; background: #222; padding: 10px; line-height: 150%; color: #fff; border: 1px solid rgba(255, 255, 255, 0.1); box-sizing: border-box; } .post img { max-width: 100%; height: auto; outline: 1px rgba(255, 255, 255, 0.2) solid; outline-offset: -1px; } .post .title { font-weight: bold; text-align: center; padding: 10px; margin-bottom: -20px; } .post .title h2, .post .title span { font-size: 16px; padding: 0 20px; background: #222; display: inline-block; } .post .title p { font-size: 12px; color: #ccc; } .post .content { text-align: right; padding: 10px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); } .post .contentt { text-align: center; padding: 20px 10px 10px 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); } .post .contentt a { margin: 5px; background: #222; padding: 2px 10px; border: 1px solid rgba(255, 255, 255, 0.1); display: inline-block; } .postinfo { padding: 10px; background: #161616; text-align: center; margin-top: 10px; border: 1px solid rgba(255, 255, 255, 0.2); } .post .read-more { float: left; } .post .cm { float: right; } .center{ text-align: center; } </style> \u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0073\u0072\u0063\u003d\u0022\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0062\u006c\u006f\u0067\u0066\u0061\u002e\u0063\u006f\u006d\u002f\u0070\u0075\u0062\u006c\u0069\u0063\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0031\u002e\u0032\u002e\u006a\u0073\u0022\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e\u0020\u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u0020\u0074\u0072\u0079\u0020\u007b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0030\u005d\u0020\u003d\u0020\u0022\u0063\u006f\u006d\u006d\u0065\u006e\u0074\u0073\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0031\u005d\u0020\u003d\u0020\u0022\u006e\u006f\u0020\u0063\u006f\u006d\u006d\u0065\u006e\u0074\u0073\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0032\u005d\u0020\u003d\u0020\u0022\u006f\u006e\u0065\u0020\u0063\u006f\u006d\u006d\u0065\u006e\u0074\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0033\u005d\u0020\u003d\u0020\u0022\u0063\u006f\u006d\u006d\u0065\u006e\u0074\u0073\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0062\u006c\u006f\u0067\u0069\u0064\u0020\u003d\u0020\u0022\u003c\u002d\u0042\u006c\u006f\u0067\u0049\u0064\u002d\u003e\u0022\u003b\u0020\u007d\u0020\u0063\u0061\u0074\u0063\u0068\u0020\u0028\u0065\u0029\u0020\u007b\u0020\u007d\u0020\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e </head> <body> <div id="stella"> <div id="header"> <div class="column1">
+
+            <!-- محل قرار گیری عکس های هدر -->
+            <img src="${img2}">
+            <img src="${img3}">
+            <img src="${img4}">
+
+</div> <div class="column2">
+
+            <!-- عکس بزرگ -->
+            <img src="${img1}">
+
+</div> </div> <h1><a title="<-BlogTitle->" href="<-BlogUrl->"> <-BlogTitle-> </a></h1> <span> <-BlogDescription-> </span> <div class="menu"> <div class="row"> <a href="#posts">Posts</a> <a href="#me">Me</a> </div> <div class="row"> <a href="http://stella.blogfa.com">Designer</a> <a href="#other">Other</a> </div> </div> <BLOGFA> <div class="post" id="posts"> <div class="title"> <p> <-PostDate-> <-PostTime-> </p> <h2><a href="<-PostLink->"> <-PostTitle-> </a></h2> </div> <div class="content"> <-PostContent-> </div> <BlogPostTagsBlock> <BlogPostTags><a href="<-TagLink->">#<-TagName-></a></BlogPostTags> </BlogPostTagsBlock> <div class="postinfo"> <a href="<-PostAuthorLink->"> <-PostAuthor-> </a> <BlogComment><span dir="rtl" comment-for="<-PostId->" class="cm"></span></BlogComment> <BlogExtendedPost> <a href="<-PostLink->" class="read-more">...more</a></BlogExtendedPost> </div> </div> </BLOGFA> <a href="/posts" class="center">...All Posts</a> <BlogNextAndPreviousBlock> <div class="menu"> <div class="row"> <BlogPreviousPageBlock> <a href="<-BlogPreviousPageLink->">Previous</a> </BlogPreviousPageBlock> <BlogNextPageBlock> <a href="<-BlogNextPageLink->">Next</a> </BlogNextPageBlock> </div> </div> </BlogNextAndPreviousBlock> <BlogProfile> <div class="post"> <div class="title"> <span>Me</span> </div> <div class="contentt"> <div id="me"> </br> <BlogPhoto><img src="<-BlogPhotoLink->"></BlogPhoto> <p> <-BlogAbout-> </p> <BlogProfileLinkBlock> <p><a href="<-BlogProfileLink->">...More</a></p> </BlogProfileLinkBlock> </div> </div> </div> </BlogProfile> <BlogCategoriesBlock> <div class="post"> <div class="title"> <span>Categories</span> </div> <div class="contentt"> <div id="other"> <BlogCategories> <a href="<-CategoryLink->"> <-CategoryName-> </a> </BlogCategories> </div> </div> </div> </BlogCategoriesBlock> <BlogLinkDumpBlock> <div class="post"> <div class="title"> <span>LinkDump</span> </div> <div class="contentt"> <div id="other"> <BlogLinkDump> <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->"> <-LinkTitle-> </a> </BlogLinkDump> <a href="/links" onclick="return openlinks();">...more</a> </div> </div> </div> </BlogLinkDumpBlock> <BlogArchiveBlock> <div class="post"> <div class="title"> <span>Archive</span> </div> <div class="contentt"> <div id="other"> <BlogArchive> <a href="<-ArchiveLink->"> <-ArchiveTitle-> </a> </BlogArchive> </div> </div> </div> </BlogArchiveBlock> <BlogLinksBlock> <div class="post"> <div class="title"> <span>Links</span> </div> <div class="contentt"> <div id="other"> <BlogLinks> <a href="<-LinkUrl->" target="_blank"> <-LinkTitle-> </a> </BlogLinks> </div> </div> </div> </BlogLinksBlock> <BlogTagsBlock> <div class="post"> <div class="title"> <span>Tags</span> </div> <div class="contentt"> <div id="other"> <BlogTags> <a href="<-TagLink->">#<-TagName-></a> </BlogTags> </div> </div> </div> </BlogTagsBlock> <div class="post"> <div class="title"> <span>Other</span> </div> <div class="contentt center"> <div id="other"> <-BlogCustomHtml-> <p>قالب طراحی شده توسط: <br><a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p> </div> </div> </div> </div>
+<!-- Theme BY : Stella.BlogFa.Com -->
+</body> </html>
+   `.trim();
+   
+            document.getElementById("output").value = code;
+            document.getElementById("copyBtn").style.visibility = "visible";
+            document.getElementById("output").style.visibility = "visible";
+         }
+   
+         function copyCode() {
+            const output = document.getElementById("output");
+            output.select();
+            output.setSelectionRange(0, 99999);
+            document.execCommand("copy");
+            alert("کد کپی شد!");
+         }
+      </script>
+</head>
+
+<body>
+<div class="main">
+   <div class="row"><label>عکس پسزمینه</label><input type="text" id="bgurl"><br></div>
+   <div class="row"><label>عکس شماره 1</label><input type="text" id="img1" value="https://s8.uupload.ir/files/3_vq.jpg"><br></div>
+   <div class="row"><label>عکس شماره 2</label><input type="text" id="img2" value="https://s8.uupload.ir/files/1_ymkj.jpg"><br></div>
+   <div class="row"><label>عکس شماره 3</label><input type="text" id="img3" value="https://s8.uupload.ir/files/2_xon9.jpg"><br></div>
+   <div class="row"><label>عکس شماره 4</label><input type="text" id="img4" value="https://s8.uupload.ir/files/4_qp5o.jpg"><br></div>
+   <div class="row">
+   <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
+   <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
+</div>
+</body>
+</html>
