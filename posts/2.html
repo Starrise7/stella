@@ -13,10 +13,25 @@
       body {
          direction: rtl;
          font-family: shabnam, tahoma;
+         margin: 0;
+      }
+
+      .main{
          display: flex;
          flex-direction: column;
          gap: 10px;
-         
+         max-width: 100%;
+      }
+
+      @media screen and (max-width: 400px) {
+         .row{
+            flex-direction: column;
+            gap: 5px !important;
+         }
+
+         .main{
+            gap: 5px;
+         }
       }
 
       input {
@@ -25,6 +40,8 @@
          border-radius: 10px;
          border: 0;
          padding: 10px 20px;
+         max-width: 100%;
+         box-sizing: border-box;
       }
 
       textarea {
@@ -36,6 +53,8 @@
          border: 0;
          padding: 10px 20px;
          resize: none;
+         max-width: 100%;
+         box-sizing: border-box;
       }
 
       textarea::-webkit-scrollbar{
@@ -70,8 +89,8 @@
          display: flex;
          align-items: center;
          gap: 30px;
+         max-width: 100%;
       }
-      
    </style>
       <script>
          function generateCode() {
@@ -114,7 +133,7 @@
 </head>
 
 <body>
-
+   <div class="main">
    <div class="row"><label>عکس پسزمینه</label><input type="text" id="bgurl"  value="https://s8.uupload.ir/files/bg_9964.png"><br></div>
    <div class="row"><label>رنگ پسزمینه</label><input type="color" id="bgcolor" value="#eeeeee"><br></div>
    <div class="row"><label>عکس بدنه</label><input type="text" id="img" value="https://s8.uupload.ir/files/p_y0u.png"><br></div>
@@ -124,7 +143,7 @@
    <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
 
    <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
-   
+   </div>
 </body>
 
 </html>
