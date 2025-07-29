@@ -13,10 +13,25 @@
       body {
          direction: rtl;
          font-family: shabnam, tahoma;
+         margin: 0;
+      }
+
+      .main{
          display: flex;
          flex-direction: column;
          gap: 10px;
-         
+         max-width: 100%;
+      }
+
+      @media screen and (max-width: 400px) {
+         .row{
+            flex-direction: column;
+            gap: 5px !important;
+         }
+
+         .main{
+            gap: 5px;
+         }
       }
 
       input {
@@ -25,6 +40,8 @@
          border-radius: 10px;
          border: 0;
          padding: 10px 20px;
+         max-width: 100%;
+         box-sizing: border-box;
       }
 
       textarea {
@@ -36,6 +53,8 @@
          border: 0;
          padding: 10px 20px;
          resize: none;
+         max-width: 100%;
+         box-sizing: border-box;
       }
 
       textarea::-webkit-scrollbar{
@@ -70,6 +89,7 @@
          display: flex;
          align-items: center;
          gap: 30px;
+         max-width: 100%;
       }
 
       .knowmore{
@@ -152,7 +172,7 @@
    <div class="row"><label>رنگ عنوان پست ها</label><input type="color" id="post" value="#c4eafd"><br></div>
    <div class="row"><label>رنگ عنوان های سایدبار</label><input type="color" id="sidebar" value="#ffe6a9"><br></div>
    <div class="row"><label>رنگ لینک ها در حالت عادی</label><input type="color" id="link1" value="#ff9fbe"><br></div>
-   <div class="row"><label>رنگ لینک ها در حالت هاور</label><input type="color" id="link2" value="#9ed0ff"><button onclick="KnowMore()" class="knowmore">بیشتر بدانید</button><br></div>
+   <div class="row"><label>رنگ لینک ها در حالت هاور</label><input type="color" id="link2" value="#9ed0ff"><br></div>
    <div class="row"><label>عکس شماره 1</label><input type="text" id="img1" value="https://s8.uupload.ir/files/h1_bn7j.png"><br></div>
    <div class="row"><label>عکس شماره 2</label><input type="text" id="img2" value="https://s8.uupload.ir/files/h2_y3m.png"><br></div>
    <div class="row"><label>عکس شماره 3</label><input type="text" id="img3" value="https://s8.uupload.ir/files/h3_9jre.png"><br></div>
