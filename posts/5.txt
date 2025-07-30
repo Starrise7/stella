@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+   <link href="<-BlogPhotoLink->" rel="shortcut icon">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title><-BlogAndPostTitle-></title>
+   <meta name="viewport" content="width=device-width, initial-scale=0.5">
+   <meta http-equiv="content-language" content="fa">
+   <meta name="description" content="<-BlogMetaDescription->">
+   <meta name="generator" content="blogfa.com">
+   <meta property="og:title" content="<-AutoPageTitle->">
+   <meta property="og:site_name" content="<-BlogTitle->">
+   <meta property="og:description" content="<-BlogMetaDescription->">
+   <meta name="twitter:title" content="<-AutoPageTitle->">
+   <meta name="twitter:description" content="<-BlogMetaDescription->">
+   <link href="https://v1.fontapi.ir/css/Mikhak" rel="stylesheet" />
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <style>
+      :root {
+         /* رنگ کلی قالب */
+         --themecolor: #cb6a61;
+
+         /* بکگراند */
+         --background: #f7e5e5 url() fixed;
+
+         /* عکس هدر */
+         --header: url(https://s8.uupload.ir/files/hd_lly9.png) no-repeat;
+      }
+::selection { background: var(--themecolor); color: #fff; } ::-moz-selection { background: var(--themecolor); color: #fff; } ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-track { background: #fff } ::-webkit-scrollbar-thumb { background: var(--themecolor) } img, p, div, table, td, tr, a, hr, span, ul, ol, video { max-width: 100%; height: auto; } img { border-radius: 10px; outline: 1px #d3d3d3 solid; outline-offset: 3px; } * { margin: 0px; padding: 0px; transition: .5s; } p { margin-top: 1em; margin-bottom: 1em; } body { direction: rtl; background: var(--background); text-align: center; font-family: Mikhak; font-size: 12px; } #stella { text-align: center; min-height: 550px; max-width: 100%; width: 630px; margin: 10px auto; display: flex; justify-content: space-between; box-sizing: border-box; padding: 10px; } h1 { font-size: 16px; } #content { width: 70%; text-align: right; overflow: hidden; } #sidebar { box-sizing: border-box; background: var(--themecolor); width: 28%; margin: 0px; padding: 10px; overflow-x: hidden; margin-top: 15px; color: #fff; } #header {width: 100%; padding-top: 142%; background: var(--header); background-size: 100%;} #header, .post, #sidebar, .nextandprevious { border-radius: 10px; } A { color: var(--themecolor); text-decoration: none; } A:hover { opacity: 0.7; text-decoration: none; } .post { padding: 10px; text-align: right; line-height: 150%; background-color: #fff; margin: 10px 0 10px 0; } .post h2 { font-size: 14pxt; font-weight: bold; text-align: center; } .postbody { line-height: 180%; padding-bottom: 10px; padding-top: 5px; } .postcontent { padding-right: 5px; padding-left: 5px; line-height: 180%; } .postcontent img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; } .postinfo { font-size: 8pt; padding: 5px; background: #f7f7f7; border-radius: 5px; } .posttags { padding-top: 5px; line-height: 150%; } .posttags span { color: gray; } .nextandprevious { padding: 10px; line-height: 150%; background: #fff; margin-bottom: 15px; overflow: auto; } .previouslink { margin-right: 20%; float: right; } .nextlink { margin-left: 20%; float: left; } #sidebar .box { padding: 10px; text-align: right; line-height: 200%; margin-bottom: 10px; } #sidebar .box a { display: block; color: #fff; } #sidebar h6 { font-size: 14px; display: block; font-weight: bold; font-style: normal; border-right: 2px solid #fff; padding: 5px; text-align: right; } #sidebar .tag a { border: 1px #fff solid; display: inline-block; padding: 0px 5px; margin: 2px; background: rgba(255, 255, 255, 0.7); border-radius: 5px; color: var(--themecolor); font-size: 10px; } #sidebar .box img { margin: 5px auto; display: block; max-width: 100%; text-align: center; outline: 1px #fff solid; } .center { text-align: center !important; } 
+/* @media screen and (max-width: 490px) { #stella { flex-direction: column; } #content, #sidebar { width: 100%; } } */
+   </style>
+   <script src="http://theme.blogfa.com/public/theme.1.2.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      try {
+         cmt_caption[0] = "CM's";
+         cmt_caption[1] = "No CM's";
+         cmt_caption[2] = "One CM";
+         cmt_caption[3] = "CM's";
+         cmt_blogid = "<-BlogId->";
+      }
+      catch (e) { }
+   </script>
+</head>
+<body>
+   <div id="stella">
+      <div id="content">
+         <div id="header"></div>
+         <BLOGFA>
+            <div class="post">
+               <h2><a href="<-PostLink->"><-PostTitle-></a></h2>
+               <div class="postbody">
+                  <div class="postcontent"><-PostContent-></div>
+                  <BlogExtendedPost><a href="<-PostLink->">+Read More</a></BlogExtendedPost>
+                  <BlogPostTagsBlock>
+                     <div class="posttags">
+                        Tags:<BlogPostTags><a href="<-TagLink->">#<-TagName-></a></BlogPostTags>
+                     </div>
+                  </BlogPostTagsBlock>
+               </div>
+               <div class="postinfo">
+                  <-PostDate-> <-PostTime-> | <-PostAuthor->
+                           <BlogComment>&nbsp;|&nbsp;<span dir="rtl" comment-for="<-PostId->"></span><BlogComment>
+               </div>
+            </div>
+         </BLOGFA>
+         <BlogNextAndPreviousBlock>
+            <div class="nextandprevious">
+               <BlogPreviousPageBlock>
+                  <a href="<-BlogPreviousPageLink->" class="previouslink">Previous</a>
+               </BlogPreviousPageBlock>
+               <BlogNextPageBlock>
+                  <a href="<-BlogNextPageLink->" class="nextlink">Next</a>
+               </BlogNextPageBlock>
+            </div>
+         </BlogNextAndPreviousBlock>
+      </div>
+      <div id="sidebar">
+         <h6>Bio</h6>
+         <div class="box center">
+            <h1><a style="color:#fff" href="<-BlogUrl->"><-BlogTitle-></a></h1>
+            <-BlogDescription->
+               <BlogProfile>
+                  <BlogPhoto><img src="<-BlogPhotoLink->"></BlogPhoto>
+                  <-BlogAbout->
+               </BlogProfile>
+         </div>
+         <h6>Menu</h6>
+         <div class="box">
+            <a href="/">Home</a>
+            <BlogProfileLinkBlock><a href="<-BlogProfileLink->">Profile</a></BlogProfileLinkBlock>
+            <a href="/posts/">Posts</a>
+            <a href="http://ُstella.blogfa.com">طراح قالب</a>
+         </div>
+         <BlogLinkDumpBlock>
+            <h6>Daily</h6>
+            <div class="box">
+               <BlogLinkDump>
+                  <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                     <-LinkTitle->
+                  </a>
+               </BlogLinkDump>
+               <a href="/links" onclick="return openlinks();">All Dailys</a>
+            </div>
+         </BlogLinkDumpBlock>
+         <BlogArchiveBlock>
+            <h6>Last Posts</h6>
+            <div class="box">
+               <BlogArchive>
+                  <a href="<-ArchiveLink->">
+                     <-ArchiveTitle->
+                  </a>
+               </BlogArchive>
+            </div>
+         </BlogArchiveBlock>
+         <BlogCategoriesBlock>
+            <h6>Categories</h6>
+            <div class="box">
+               <BlogCategories>
+                  <a href="<-CategoryLink->">
+                     <-CategoryName->
+                  </a>
+               </BlogCategories>
+            </div>
+         </BlogCategoriesBlock>
+         <BlogTagsBlock>
+            <h6>Tags</h6>
+            <div class="box">
+               <div class="tag">
+                  <BlogTags>
+                     <a href="<-TagLink->">
+                        <-TagName->(<-TagCount->)
+                     </a>
+                  </BlogTags>
+               </div>
+            </div>
+         </BlogTagsBlock>
+         <BlogAuthorsBlock>
+            <h6>Authors</h6>
+            <div class="box">
+               <BlogAuthors>
+                  <a href="<-AuthorLink->">
+                     <-AuthorName->
+                  </a>
+               </BlogAuthors>
+            </div>
+         </BlogAuthorsBlock>
+         <BlogLinksBlock>
+            <h6>Friends</h6>
+            <div class="box">
+               <BlogLinks>
+                  <a href="<-LinkUrl->" target="_blank">
+                     <-LinkTitle->
+                  </a>
+               </BlogLinks>
+            </div>
+         </BlogLinksBlock>
+         <h6>Other</h6>
+         <div class="box center">
+            <-BlogCustomHtml->
+               <p>قالب طراحی شده توسط: <br><a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p>
+         </div>
+      </div>
+   </div>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+</body>
+</html>

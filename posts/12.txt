@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+   <link href="<-BlogPhotoLink->" rel="shortcut icon">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>
+      <-BlogAndPostTitle->
+   </title>
+   <meta http-equiv="content-language" content="fa">
+   <meta name="description" content="<-BlogMetaDescription->">
+   <meta name="generator" content="blogfa.com">
+   <meta property="og:title" content="<-AutoPageTitle->">
+   <meta property="og:site_name" content="<-BlogTitle->">
+   <meta property="og:description" content="<-BlogMetaDescription->">
+   <meta name="twitter:title" content="<-AutoPageTitle->">
+   <meta name="twitter:description" content="<-BlogMetaDescription->">
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <script src="http://theme.blogfa.com/public/theme.1.2.js" type="text/javascript"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" type="text/css" rel="stylesheet">
+   <link rel="stylesheet" href="https://up.tempkade.ir/themes/fonts/font-awesome.min.css" type="text/css">
+   <style>
+img, p, div, table, td, tr, a, hr, span, ul, ol, video{ max-width: 100%; height: auto;} ::selection { background: #000; color: #fff; } ::-moz-selection { background: #000; color: #fff; } ::-webkit-scrollbar { width: 10px; } ::-webkit-scrollbar-thumb { background: #222; border: 1px solid rgba(255, 255, 255, 0.1); } * { margin: 0px auto; padding: 0px; transition: 0.5s; scroll-behavior: smooth; } img:hover { filter: brightness(120%); } body { direction: rtl; background: #161616; font-family: 'Baloo Bhaijaan 2'; font-size: 14px; color: #fff; } #stella { min-height: 550px; width: 500px; max-width: 100%; padding: 20px 10px; display: flex; flex-direction: column; gap: 21px; box-sizing: border-box; } .menu { width: 100%; display: flex; flex-direction: column; gap: 20px; } .row { width: 100%; display: flex; gap: 20px; } .row a { text-align: center; font-size: 16px; width: 100%; background: #222; padding: 10px; border: 1px solid rgba(255, 255, 255, 0.1); } .row a:hover, .post .contentt a:hover { background: #333; } #header { text-align: center; width: 100%; height: auto; display: flex; justify-content: space-between; } .column1 { display: flex; width: 23%; min-height: 100%; justify-content: space-between; flex-direction: column; margin: 0; } .column2 { display: flex; width: 74%; height: 100%; justify-content: space-between; flex-direction: column; margin: 0; } #header img { outline: 1px rgba(255, 255, 255, 0.2) solid; outline-offset: -1px; width: 100%; height: auto; } A { color: #fff; text-decoration: none; Font-weight: bold; } A:hover { color: #fff; text-shadow: 0px 0px 5px #fff; text-decoration: none; } .post { width: 100%; background: #222; padding: 10px; line-height: 150%; color: #fff; border: 1px solid rgba(255, 255, 255, 0.1); box-sizing: border-box; } .post img { max-width: 100%; height: auto; outline: 1px rgba(255, 255, 255, 0.2) solid; outline-offset: -1px; } .post .title { font-weight: bold; text-align: center; padding: 10px; margin-bottom: -20px; } .post .title h2, .post .title span { font-size: 16px; padding: 0 20px; background: #222; display: inline-block; } .post .title p { font-size: 12px; color: #ccc; } .post .content { text-align: right; padding: 10px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); } .post .contentt { text-align: center; padding: 20px 10px 10px 10px; border-top: 1px solid rgba(255, 255, 255, 0.1); } .post .contentt a { margin: 5px; background: #222; padding: 2px 10px; border: 1px solid rgba(255, 255, 255, 0.1); display: inline-block; } .postinfo { padding: 10px; background: #161616; text-align: center; margin-top: 10px; border: 1px solid rgba(255, 255, 255, 0.2); } .post .read-more { float: left; } .post .cm { float: right; } .center{ text-align: center; }
+   </style>
+
+   <script type="text/javascript">
+      try {
+         cmt_caption[0] = "comments";
+         cmt_caption[1] = "no comments";
+         cmt_caption[2] = "one comment";
+         cmt_caption[3] = "comments";
+         cmt_blogid = "<-BlogId->";
+      }
+      catch (e) { }
+   </script>
+
+</head>
+<body>
+   <div id="stella">
+      <div id="header">
+         <div class="column1">
+            <!-- محل قرار گیری عکس های هدر -->
+            <img src="https://s8.uupload.ir/files/1_ymkj.jpg">
+            <img src="https://s8.uupload.ir/files/2_xon9.jpg" />
+            <img src="https://s8.uupload.ir/files/4_qp5o.jpg" />
+         </div>
+         <div class="column2">
+            <!-- عکس بزرگ -->
+            <img src="https://s8.uupload.ir/files/3_vq.jpg">
+         </div>
+      </div>
+      <h1><a title="<-BlogTitle->" href="<-BlogUrl->">
+            <-BlogTitle->
+         </a></h1>
+      <span>
+         <-BlogDescription->
+      </span>
+      <div class="menu">
+         <div class="row">
+            <a href="#posts">Posts</a>
+            <a href="#me">Me</a>
+         </div>
+         <div class="row">
+            <a href="http://stella.blogfa.com">Designer</a>
+            <a href="#other">Other</a>
+         </div>
+      </div>
+      <BLOGFA>
+         <div class="post" id="posts">
+            <div class="title">
+               <p>
+                  <-PostDate->
+                     <-PostTime->
+               </p>
+               <h2><a href="<-PostLink->">
+                     <-PostTitle->
+                  </a></h2>
+            </div>
+            <div class="content">
+               <-PostContent->
+            </div>
+            <BlogPostTagsBlock>
+               <BlogPostTags><a href="<-TagLink->">#<-TagName-></a></BlogPostTags>
+            </BlogPostTagsBlock>
+            <div class="postinfo">
+               <a href="<-PostAuthorLink->">
+                  <-PostAuthor->
+               </a>
+               <BlogComment><span dir="rtl" comment-for="<-PostId->" class="cm"></span></BlogComment>
+               <BlogExtendedPost> <a href="<-PostLink->" class="read-more">...more</a></BlogExtendedPost>
+            </div>
+         </div>
+      </BLOGFA>
+      <a href="/posts" class="center">...All Posts</a>
+      <BlogNextAndPreviousBlock>
+         <div class="menu">
+            <div class="row">
+            <BlogPreviousPageBlock>
+               <a href="<-BlogPreviousPageLink->">Previous</a>
+            </BlogPreviousPageBlock>
+            <BlogNextPageBlock>
+               <a href="<-BlogNextPageLink->">Next</a>
+            </BlogNextPageBlock>
+         </div>
+         </div>
+      </BlogNextAndPreviousBlock>
+      <BlogProfile>
+         <div class="post">
+            <div class="title">
+               <span>Me</span>
+            </div>
+            <div class="contentt">
+               <div id="me">
+                  </br>
+                  <BlogPhoto><img src="<-BlogPhotoLink->"></BlogPhoto>
+                  <p>
+                     <-BlogAbout->
+                  </p>
+                  <BlogProfileLinkBlock>
+                     <p><a href="<-BlogProfileLink->">...More</a></p>
+                  </BlogProfileLinkBlock>
+               </div>
+            </div>
+         </div>
+      </BlogProfile>
+      <BlogCategoriesBlock>
+         <div class="post">
+            <div class="title">
+               <span>Categories</span>
+            </div>
+            <div class="contentt">
+               <div id="other">
+                  <BlogCategories>
+                     <a href="<-CategoryLink->">
+                        <-CategoryName->
+                     </a>
+                  </BlogCategories>
+               </div>
+            </div>
+         </div>
+      </BlogCategoriesBlock>
+      <BlogLinkDumpBlock>
+         <div class="post">
+            <div class="title">
+               <span>LinkDump</span>
+            </div>
+            <div class="contentt">
+               <div id="other">
+                  <BlogLinkDump>
+                     <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                        <-LinkTitle->
+                     </a>
+                  </BlogLinkDump>
+                  <a href="/links" onclick="return openlinks();">...more</a>
+               </div>
+            </div>
+         </div>
+      </BlogLinkDumpBlock>
+      <BlogArchiveBlock>
+         <div class="post">
+            <div class="title">
+               <span>Archive</span>
+            </div>
+            <div class="contentt">
+               <div id="other">
+                  <BlogArchive>
+                     <a href="<-ArchiveLink->">
+                        <-ArchiveTitle->
+                     </a>
+                  </BlogArchive>
+               </div>
+            </div>
+         </div>
+      </BlogArchiveBlock>
+      <BlogLinksBlock>
+         <div class="post">
+            <div class="title">
+               <span>Links</span>
+            </div>
+            <div class="contentt">
+               <div id="other">
+                  <BlogLinks>
+                     <a href="<-LinkUrl->" target="_blank">
+                        <-LinkTitle->
+                     </a>
+                  </BlogLinks>
+               </div>
+            </div>
+         </div>
+      </BlogLinksBlock>
+      <BlogTagsBlock>
+         <div class="post">
+            <div class="title">
+               <span>Tags</span>
+            </div>
+            <div class="contentt">
+               <div id="other">
+                  <BlogTags>
+                     <a href="<-TagLink->">#<-TagName-></a>
+                  </BlogTags>
+               </div>
+            </div>
+         </div>
+      </BlogTagsBlock>
+      <div class="post">
+         <div class="title">
+            <span>Other</span>
+         </div>
+         <div class="contentt center">
+            <div id="other">
+                  <-BlogCustomHtml->
+                  <p>قالب طراحی شده توسط: <br><a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+</body>
+</html>
