@@ -100,6 +100,7 @@
    <script>
       function generateCode() {
          const img = document.getElementById("img").value;
+         const img2 = document.getElementById("img2").value;
          const code = `
             <style>* {cursor: url(${img}), auto !important;} a:hover {cursor: url(${img2}), auto !important;}</style>
    `.trim();
@@ -125,7 +126,7 @@
 <body>
    <div class="main">
       <div class="row"><label>آدرس عکس موس در حالت عادی</label><input type="text" id="img"><br></div>
-      <div class="row"><label>آدرس عکس موس در حالت هاور</label><input type="text" id="img"><button onclick="KnowMore()" class="knowmore">بیشتر بدانید</button></div><br>
+      <div class="row"><label>آدرس عکس موس در حالت هاور</label><input type="text" id="img2"><button onclick="KnowMore()" class="knowmore">بیشتر بدانید</button></div><br>
 
       <div class="row">
          <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()"
