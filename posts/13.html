@@ -91,12 +91,17 @@
          gap: 30px;
          max-width: 100%;
       }
+      .knowmore{
+         font-size: 10px;
+         width: 70px;
+         padding: 5px 0;
+      }
    </style>
    <script>
       function generateCode() {
          const img = document.getElementById("img").value;
          const code = `
-            <style>* {cursor: url(${img}), auto !important;}</style>
+            <style>* {cursor: url(${img}), auto !important;} a:hover {cursor: url(${img2}), auto !important;}</style>
    `.trim();
 
          document.getElementById("output").value = code;
@@ -111,12 +116,16 @@
          document.execCommand("copy");
          alert("کد کپی شد!");
       }
+      function KnowMore() {
+            alert("حالت هاور یعنی وقتی ماوس روی لینک می‌ره و ظاهرش تغییر می‌کنه. این حالت معمولاً فقط در لپ‌تاپ یا کامپیوتر دیده می‌شه، چون گوشی‌ها ماوس ندارن.");
+         }
    </script>
 </head>
 
 <body>
    <div class="main">
-      <div class="row"><label>آدرس عکس موس</label><input type="text" id="img"><br></div>
+      <div class="row"><label>آدرس عکس موس در حالت عادی</label><input type="text" id="img"><br></div>
+      <div class="row"><label>آدرس عکس موس در حالت هاور</label><input type="text" id="img"><button onclick="KnowMore()" class="knowmore">بیشتر بدانید</button></div><br>
 
       <div class="row">
          <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()"
