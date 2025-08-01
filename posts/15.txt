@@ -1,0 +1,3 @@
+<!-- Code BY : Stella.BlogFa.Com -->
+<style>img, table, td, tr, a, hr, ul, ol, video, audio{ max-width: 100% !important; height: auto !important;}</style>
+<!-- Code BY : Stella.BlogFa.Com -->
