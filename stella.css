@@ -185,8 +185,7 @@ h1 {
    align-items: center;
 }
 
-.section h2,
-.section span {
+.section h2 {
    color: #2C2C2C;
    display: flex;
    gap: 10px;
