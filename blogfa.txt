@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--Theme By : http://pink-theme.blogfa.com -->
+
+
+    <title><-BlogAndPostTitle-></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <script src="https://www.blogfa.com/Desktop/js/common.992.js" type="text/javascript"></script>
+    	<script type="text/javascript">
+            
+            function deletepost(postid) {
+                var tk = "839474872";
+                delpost(postid,'deletepost.aspx', 'home.aspx?', tk);
+            }
+
+            function editpost(postid) {
+                var tk = "839474872";
+                 window.location = "post.aspx?action=edit&postid=" + postid + "&t=" + tk ;
+            }
+
+        </script>
+        <script language="javascript" src="https://www.blogfa.com/Desktop/js/postaction.2.js" type="text/javascript"></script>
+
+		<LINK href="https://www.blogfa.com/static/css/p.992.css" type="text/css" rel="stylesheet">
+
+<script src="http://theme.blogfa.com/public/theme.1.2.js"  type="text/javascript" ></script>
+
+<script type="text/javascript">
+ try {
+  cmt_caption[0]="CM`s";
+  cmt_caption[1]="No CM`s";
+  cmt_caption[2]="One CM";
+  cmt_caption[3]="CM`s";
+  cmt_blogid="<-BlogId->";
+  }
+  catch(e) {}
+ 
+</script>
+<style>
+		    .homedashboard {
+		        padding: 3px;
+		        margin-bottom: 5px;
+		    }
+
+		        .homedashboard .row {
+		            margin: 5px 0px 15px 0px;
+		        }
+
+		            .homedashboard .row .right {
+		                float: right;
+		                width: 35px;
+		                text-align: right;
+		            }
+		            .homedashboard .row .left {
+		                float: right;
+		                text-align: right;
+                        margin-right:10px;
+		            }
+                   .homedashboard .row .left a{
+                       font-size:14px;
+		            }
+                   .homedashboard .row .left .r{
+                       font-size:11px;
+                       border-radius:8px;
+                       padding:2px 5px 2px 5px;
+                       margin-right:2px;
+                       color: #fff;
+                       background:#E74C3C;
+		            }
+		            .homedashboard .l {
+		                text-align: right;
+                        color:#828282;
+                        display:block;
+                        font-size:12px;
+		            }
+
+.warning {border:1px solid #cccccc ;direction:rtl; background-color: #ffffcc;margin: 0 10px 0px 10px;}
+.warning table{padding:5px;}
+.warning .imgbox{vertical-align: middle;}
+.warning img{border:0px;}
+.warning .text {line-height:180%;font-family:Tahoma; font-size:9pt;}
+
+             @media screen and (max-width: 450px) {
+                .homedashboard .row .right  { display:none; }
+            }
+
+</style>
+	
+		
+	</HEAD>
+	<body>
+
+    <div id="header">
+        <div class="left">
+            <a href="/"><img src="https://www.blogfa.com/static/images/blogfa-logo.gif"></a>
+        </div>
+        <div class="right">
+            <a id="menutoggle"  onclick="javascript:togglemenu();" >&#8801;</a>
+        </div>
+        <div class="clear"></div>
+</div>
+
+<div id="wrapper">
+
+<div id="sidebar" class="sidebar">
+
+    <div>
+        <ul>
+            <li><a href="/"  onclick="hidemenu()"><span>&#10095;</span>صفحه اصلی</a></li>
+            <li><a href="/Posts"  onclick="hidemenu()"><span>&#10095;</span>نوشته های پیشین</a></li>
+            <li><a href="/profile"  onclick="hidemenu()"><span>&#10095;</span>پروفایل مدیر وبلاگ</a></li>
+            <li><a href="/Archive"  onclick="hidemenu()"><span>&#10095;</span>آرشیو وبلاگ</a></li>
+            <li><a href="/links"  onclick="hidemenu()"><span>&#10095;</span>پیوندهای روزانه</a></li>
+            <li><a href="mailto:<-BlogEmail->"  onclick="hidemenu()"><span>&#10095;</span>ارتباط با مدیر</a></li>
+            <li><a target="_blank" href="/" id="linkBlog" onclick="hidemenu()"><span>&#10095;</span>مشاهده وبلاگ</a></li>
+            <li><a target="_blank" href="/rss" id="linkBlog" onclick="hidemenu()"><span>&#10095;</span>نقشه وب</a></li>
+<BlogNextAndPreviousBlock><BlogPreviousPageBlock>
+            <li><a href="<-BlogPreviousPageLink->" onclick="hidemenu()"><span>&#10095;</span>مطالب جدید تر</a></li>
+</BlogPreviousPageBlock>
+<BlogNextPageBlock>
+            <li><a href="<-BlogNextPageLink->" onclick="hidemenu()"><span>&#10095;</span>مطالب قدیمی تر</a></li>
+</BlogNextPageBlock>
+</BlogNextAndPreviousBlock>
+            <li><a href="https://pink-theme.blogfa.com" onclick="hidemenu()"><span>&#10095;</span>طراح قالب</a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<div id="container"=>
+
+<div id="titlebox">
+<div class="right"><a href="/" target="_blank"><-BlogTitle-></a> / <a href="https://pink-theme.blogfa.com">طراح قالب</a></div>
+<div class="left"></div>
+<div class="clear"></div>
+</div>
+
+    <div style="text-align:center;">
+        <div style="padding: 20px 5% 20px 5%; max-width: 900px;margin:auto;text-align:right;">
+        
+
+<div class="headbox" >
+<span id="lblTitle">نوشته های وبلاگ</span>
+</div>
+<div class="content">
+
+
+<div class="homedashboard">
+<BLOGFA>
+<div class="row">
+    <div class="right"></div>
+    <div class="left">
+        <a target="_top" href="<-PostLink->"><-PostTitle-></a>
+<span class="l"> <-PostDate-> <-PostTime-> توسط <-PostAuthor->
+       <BlogComment>&nbsp;|&nbsp;<span dir="rtl" comment-for="<-PostId->"></span></BlogComment></span>
+        <span class="l"><-PostContent-><BlogPostTagsBlock><br>برچسب‌ها: <BlogPostTags separator="# "><a href="<-TagLink->"><-TagName-></a></BlogPostTags></BlogPostTagsBlock></span>
+<BlogExtendedPost><span class="l"><a href="<-PostLink->">ادامه نوشته</a></span></BlogExtendedPost><hr />
+    </div>
+    <div class="clear"></div>
+</div></BLOGFA>
+
+</div><!--end homedashboard-->
+
+
+
+    
+</div>	
+
+<div style="height:30px;"></div>
+<-BlogCustomHtml->
+<BlogPreviousItemsBlock>
+<div class="headbox">آخرین نوشته ها</div>
+<div class="content">			
+
+						<div class="grid">
+						<BlogPreviousItems><table border="0"  width="100%" dir="rtl" cellspacing="0"><tr><td width="70" class="" ><-PostDate-></td><td  class=" t" ><a href="<-PostLink->"><-PostTitle-></a></td><td width="65" class=""  align="center"><BlogComment>&nbsp;<span dir="rtl" comment-for="<-PostId->"></span></BlogComment></td><td width="25" class=""  align="center"><a href="<-PostLink->"><img border="0" src="https://www.blogfa.com/static/panel/edit.gif" width="16" height="16" title="مشاهده"></a></td><td width="25" class=""  align="center"><a href="#">	<img border="0" src="https://www.blogfa.com/static/panel/delete.gif" width="16" height="16"></a></td></tr></table></BlogPreviousItems>
+						</div>
+</BlogPreviousItemsBlock>
+
+</div>	
+ 
+        </div>
+    </div>
+</div>
+
+</div> <!-- end wrapper-->
+
+<!--Theme By : http://pink-theme.blogfa.com -->
+
+</body>
+</HTML>
