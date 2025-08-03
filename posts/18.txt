@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+   <link href="<-BlogPhotoLink->" rel="shortcut icon">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>
+      <-BlogAndPostTitle->
+   </title>
+   <meta http-equiv="content-language" content="fa">
+   <meta name="description" content="<-BlogMetaDescription->">
+   <meta name="generator" content="blogfa.com">
+   <meta property="og:title" content="<-AutoPageTitle->">
+   <meta property="og:site_name" content="<-BlogTitle->">
+   <meta property="og:description" content="<-BlogMetaDescription->">
+   <meta name="twitter:title" content="<-AutoPageTitle->">
+   <meta name="twitter:description" content="<-BlogMetaDescription->">
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+   <link href="https://v1.fontapi.ir/css/MikhakFD" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   <style>
+img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto; } ::selection { background: #391300; color: #fff; } ::-moz-selection { background: #391300; color: #fff; } * { margin: 0px; padding: 0px; transition: 0.5s; font-family: Bubblegum Sans, mikhak; } body { display: flex; justify-content: center; background-color: #9f7c68; background-image: repeating-linear-gradient(90deg, #9f7c68, #9f7c68 4px, #774a2d 4px, #774a2d 6px); text-align: center; font-size: 17px; color: #391300; direction: rtl; } .welcome { height: 100px; width: 300px; border-radius: 40px; border: #391300 3px solid; background: #8d5641; outline: 2px solid rgba(255, 255, 255, 0.3); outline-offset: -14px; box-shadow: 0 2px 0 3px rgba(0, 0, 0, 0.2); position: fixed; z-index: 3; color: #ffdcd3; text-shadow: 0 5px 0 #391300; padding: 10px; box-sizing: border-box; } .welcome p { font-size: 40px; } .top1 { width: 100%; height: 20px; background: #8d5641; border: 3px solid #391300; position: fixed; z-index: 2; border-width: 2px 0; } .top2 { height: 90px; width: 100vw; overflow: hidden; display: flex; position: fixed; z-index: 1; } .semicircle { min-width: 70px; border-radius: 0 0 49% 49%; border: rgba(0, 0, 0, 0.2) 3px solid; background: #c1cd83; outline: 3px solid rgba(255, 255, 255, 0.3); outline-offset: -6px; } .semicircle:nth-child(even) { background: #ffe9c4; } A { color: var(--themecolor3); text-decoration: none; } A:hover { opacity: 0.7; } img { border-radius: 20px;} img.profile {padding: 5px; border: 2px solid #391300; box-sizing: border-box; } #stella { width: 700px; margin-bottom: 50px; margin-top: 50px; padding: 10px; box-sizing: border-box; } .main { margin: 70px 0; width: 100%; display: flex; flex-direction: column; gap: -10px; border-radius: 0 0 20px 20px; align-items: end; } .b1 { background: #fcf9f2; padding: 10px; padding-bottom: 0; border-radius: 40px 40px 0 0; overflow: hidden; } .b2 { background: #fcf9f2; padding: 10px; padding-top: 0; overflow: hidden; border-radius: 0 50px 50px 50px; width: 100%; } .navbar { border: #9f7c68 dashed 2px; border-radius: 40px 40px 0 0; border-bottom: 0; display: flex; width: 400px; height: 50px; align-items: center; justify-content: space-around; } .navbar a { color: #8a6143; font-size: 20px; } i { margin-right: 10px; color: #9db84d; } .content { border: #9f7c68 dashed 2px; border-top: #fcf9f2 solid 10px; background: #fcf9f2; width: 100%; border-radius: 0 50px 50px 50px; overflow: hidden; box-sizing: border-box; } .hero { width: 100%; padding: 10px 20px; background: repeating-linear-gradient(135deg, #8a6143, #8a6143 10px, #774a2d 10px, #774a2d 20px); box-sizing: border-box; color: #fcf9f2; display: flex; justify-content: space-between; align-items: center; } .hero .title { text-align: end; } .hero .img { width: 120px; height: 120px; border-radius: 50%; border: #fcf9f2 solid 7px; box-shadow: 2px 2px 0 3px rgba(0, 0, 0, 0.4); background: radial-gradient(circle, #ffedde, #ffedde 3px, #d4aa8d 3px, #d4aa8d 6px); background-size: 14px 14px; transform: rotate(45deg); } h1 { font-size: 49px; font-weight: normal; } h2 { font-size: 16px; font-weight: normal; } .buttonbox { display: flex; gap: 20px; width: 100%; justify-content: end; margin-top: 10px; } .button { background: #fcf9f2; border-radius: 100px; border: 2px solid #391300; border-width: 2px 2px 5px 5px; width: 200px; color: #391300; padding: 5px 0; text-align: center; } .btn2 { background: #8d5641; color: #fcf9f2; } .post { padding: 10px; width: 50%; box-sizing: border-box; float: right; margin-top: 20px; } .post:nth-child(even) { float: left; } .post h3, .post .title { border-bottom: #c6bdb4 dashed 2px; padding: 10px; font-weight: normal; font-size: 30px; margin-bottom: 10px; } .post .info { color: #9f7c68; font-size: 14px; } .post .p { background: #f7edca; border-radius: 30px; box-shadow: 4px 4px 0 0 #a36731; padding: 10px; line-height: 2; margin: 5px 0; text-align: right; } .post .tags { display: flex; flex-wrap: wrap; gap: 10px; font-size: 12px; } .post .tags a { background: #9f7c68; border-radius: 10px; padding: 0 5px; } .post>a { display: block; line-height: 2; } .center { justify-content: center; } .pages { position: fixed; border-radius: 50%; border: #391300 3px solid; background: #8d5641; outline: 2px solid rgba(255, 255, 255, 0.3); outline-offset: -14px; box-shadow: 0 2px 0 3px rgba(0, 0, 0, 0.2); z-index: 2; color: #ffdcd3; text-shadow: 0 5px 0 #391300; padding: 23px 20px 23px 28px; top: 50%; font-size: 35px; } .next { left: 10%; } .prev { right: 10%; } .readmore{ display: block; text-align: end; padding: 0 10px; }
+   </style>
+   <script src="http://theme.blogfa.com/public/theme.1.2.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      try {
+         cmt_caption[0] = "All Comments";
+         cmt_caption[1] = "No Comments";
+         cmt_caption[2] = "One Comment";
+         cmt_caption[3] = "Comments";
+         cmt_blogid = "<-BlogId->";
+      }
+      catch (e) { }
+   </script>
+</head>
+
+<body>
+   <BlogNextAndPreviousBlock>
+      <BlogPreviousPageBlock>
+         <a href="<-BlogPreviousPageLink->" class="pages prev"><i class="fa-solid fa-arrow-right"></i></a>
+      </BlogPreviousPageBlock>
+      <BlogNextPageBlock>
+         <a href="<-BlogNextPageLink->" class="pages next"><i class="fa-solid fa-arrow-left"></i></a>
+      </BlogNextPageBlock>
+   </BlogNextAndPreviousBlock>
+   <div class="welcome">
+      <p>Welcome</p>
+      <span>to my weblog ヾ(≧▽≦)ﾉ</span>
+   </div>
+   <div class="top1"></div>
+   <div class="top2">
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+      <div class="semicircle"></div>
+   </div>
+   <div id="stella">
+      <div class="main">
+         <div class="b1">
+            <div class="navbar">
+               <a href="http://stella.blogfa.com">Designer<i class="fa-solid fa-palette"></i></a>
+               <a href="<-BlogProfileLink->">About<i class="fa-solid fa-user"></i></a>
+               <a href="<-BlogUrl->">Home<i class="fa-solid fa-home"></i></a>
+            </div>
+         </div>
+         <div class="b2">
+            <div class="content">
+               <div class="hero">
+                  <div class="img"></div>
+                  <div class="title">
+                     <h1><a href="<-BlogUrl->">
+                           <-BlogTitle->
+                        </a></h1>
+                     <h2>
+                        <-BlogDescription->
+                     </h2>
+                     <div class="buttonbox">
+                        <a href="<-BlogArchiveLink->">
+                           <div class="button btn2">Archive</div>
+                        </a>
+                        <a href="/posts">
+                           <div class="button">All Posts</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <BLOGFA>
+                  <div class="post">
+                     <a href="<-PostLink->">
+                        <h3><i class="fa-solid fa-pen"></i>
+                           <-PostTitle->
+                        </h3>
+                     </a>
+                     <div class="info">
+                        <-PostDate->
+                           <-PostTime-> ~
+                              <-PostAuthor->
+                                 <BlogComment> ~ <span dir="rtl" comment-for="<-PostId->"></span>
+                                 </BlogComment>
+                     </div>
+                     <div class="p">
+                        <-PostContent->
+                           <BlogPostTagsBlock>
+                              <div class="tags">tags:
+                                 <BlogPostTags>
+                                    <a href="<-TagLink->">#<-TagName-></a>
+                                 </BlogPostTags>
+                              </div>
+                           </BlogPostTagsBlock>
+                           <BlogExtendedPost><a href="<-PostLink->" class="readmore">Read More</a></BlogExtendedPost>
+                     </div>
+                  </div>
+               </BLOGFA>
+               <BlogProfile>
+                  <div class="post">
+                     <BlogPhoto><img src="<-BlogPhotoLink->" alt="<-BlogTitle->" class="profile"></BlogPhoto>
+                     <div class="title">About <i class="fa-solid fa-user"></i></div>
+                     <p>
+                        <-BlogAbout->
+                     </p>
+                  </div>
+               </BlogProfile>
+               <BlogLinkDumpBlock>
+                  <div class="post">
+                     <div class="title">Daily <i class="fa-solid fa-calendar-day"></i></div>
+                     <BlogLinkDump>
+                        <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                           <-LinkTitle->
+                        </a>
+                     </BlogLinkDump>
+                  </div>
+               </BlogLinkDumpBlock>
+               <BlogArchiveBlock>
+                  <div class="post">
+                     <div class="title">Archive <i class="fa-solid fa-box-archive"></i></div>
+                     <BlogArchive>
+                        <a href="<-ArchiveLink->">
+                           <-ArchiveTitle->
+                        </a>
+                     </BlogArchive>
+                  </div>
+               </BlogArchiveBlock>
+               <BlogCategoriesBlock>
+                  <div class="post">
+                     <div class="title">Categories <i class="fa-solid fa-list"></i></div>
+                     <BlogCategories>
+                        <a href="<-CategoryLink->">
+                           <-CategoryName->
+                        </a>
+                     </BlogCategories>
+                  </div>
+               </BlogCategoriesBlock>
+               <BlogTagsBlock>
+                  <div class="post">
+                     <div class="title">Tags <i class="fa-solid fa-tags"></i></div>
+                     <BlogTags>
+                        <a href="<-TagLink->">
+                           <-TagName->
+                        </a>
+                     </BlogTags>
+                  </div>
+               </BlogTagsBlock>
+               <BlogAuthorsBlock>
+                  <div class="post">
+                     <div class="title">Authors <i class="fa-solid fa-users"></i></div>
+                     <BlogAuthors>
+                        <a href="<-AuthorLink->">
+                           <-AuthorName->
+                        </a>
+                     </BlogAuthors>
+                  </div>
+               </BlogAuthorsBlock>
+               <BlogLinksBlock>
+                  <div class="post">
+                     <div class="title">Links <i class="fa-solid fa-link"></i></div>
+                     <BlogLinks>
+                        <a href="<-LinkUrl->" target="_blank">
+                           <-LinkTitle->
+                        </a>
+                     </BlogLinks>
+                  </div>
+               </BlogLinksBlock>
+               <div class="hero center">
+                  <p>قالب طراحی شده توسط :<a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Theme BY : Stella.BlogFa.Com -->
+</body>
+
+</html>
