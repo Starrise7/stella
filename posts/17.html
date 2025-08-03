@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <link href="https://v1.fontapi.ir/css/Shabnam" rel="stylesheet">
+   <style>
+      ::selection {
+         background: #5A7D52;
+         color: white;
+      }
+
+      body {
+         direction: rtl;
+         font-family: shabnam, tahoma;
+         margin: 0;
+      }
+
+      .main {
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         max-width: 100%;
+      }
+
+      @media screen and (max-width: 400px) {
+         .row {
+            flex-direction: column;
+            gap: 5px !important;
+         }
+
+         .main {
+            gap: 5px;
+         }
+      }
+
+      input {
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+         max-width: 100%;
+         box-sizing: border-box;
+      }
+
+      textarea {
+         width: 300px;
+         height: 150px;
+         outline: 0;
+         background: #F4F4F0;
+         border-radius: 10px;
+         border: 0;
+         padding: 10px 20px;
+         resize: none;
+         max-width: 100%;
+         box-sizing: border-box;
+      }
+
+      textarea::-webkit-scrollbar {
+         display: none;
+      }
+
+      input[type="color"] {
+         padding: 0;
+         width: 70px;
+         background: 0;
+      }
+
+      button {
+         text-align: center;
+         border: none;
+         cursor: pointer;
+         font-family: var(--font);
+         background: #5A7D52;
+         padding: 10px 0;
+         color: white;
+         width: 100px;
+         border-radius: 10px;
+         font-weight: bold;
+         font-size: 14px;
+      }
+
+      button:hover {
+         background-color: #3E5F36;
+      }
+
+      .row {
+         display: flex;
+         align-items: center;
+         gap: 30px;
+         max-width: 100%;
+      }
+   </style>
+   <script>
+      function generateCode() {
+         const color = document.getElementById("color").value;
+         const bgcolor = document.getElementById("bgcolor").value;
+         const code = `
+<!-- Code BY Stella.BlogFa.Com -->
+<style>::selection { background: ${bgcolor} !important; color: ${color} !important; } ::-moz-selection { background: ${bgcolor} !important; color: ${color} !important;}</style>
+<!-- Code BY Stella.BlogFa.Com -->
+   `.trim();
+
+         document.getElementById("output").value = code;
+         document.getElementById("copyBtn").style.visibility = "visible";
+         document.getElementById("output").style.visibility = "visible";
+      }
+
+      function copyCode() {
+         const output = document.getElementById("output");
+         output.select();
+         output.setSelectionRange(0, 99999);
+         document.execCommand("copy");
+         alert("کد کپی شد!");
+      }
+   </script>
+</head>
+
+<body>
+   <div class="main">
+      <div class="row"><label>رنگ متن</label><input type="color" id="color" value="#ffffff"><br></div>
+      <div class="row"><label>رنگ بکگراند متن</label><input type="color" id="bgcolor" value="#5A7D52"></div><br>
+
+      <div class="row">
+         <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()"
+            style="visibility: hidden;">کپی کد</button><br>
+      </div>
+
+      <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>
+   </div>
+</body>
+
+</html>
