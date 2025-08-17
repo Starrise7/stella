@@ -205,6 +205,10 @@ img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto;
                      </BlogLinks>
                   </div>
                </BlogLinksBlock>
+               <div class="post">
+                  <div class="title">Other <i class="fa-solid fa-star"></i></div>
+                  <-BlogCustomHtml->
+               </div>
                <div class="hero center">
                   <p>قالب طراحی شده توسط :<a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p>
                </div>
