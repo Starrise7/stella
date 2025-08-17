@@ -159,6 +159,10 @@
                      </BlogLinks>
                   </div>
                </BlogLinksBlock>
+               <div class="post">
+                  <span>Other</span>
+                  <-BlogCustomHtml->
+               </div>
             </div>
          </div>
          <BlogPhoto><div class="profile"><img src="<-BlogPhotoLink->" alt="<-BlogTitle->"></BlogPhoto>
