@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+   <link href="<-BlogPhotoLink->" rel="shortcut icon">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>
+      <-BlogAndPostTitle->
+   </title>
+   <meta http-equiv="content-language" content="fa">
+   <meta name="description" content="<-BlogMetaDescription->">
+   <meta name="generator" content="blogfa.com">
+   <meta property="og:title" content="<-AutoPageTitle->">
+   <meta property="og:site_name" content="<-BlogTitle->">
+   <meta property="og:description" content="<-BlogMetaDescription->">
+   <meta name="twitter:title" content="<-AutoPageTitle->">
+   <meta name="twitter:description" content="<-BlogMetaDescription->">
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" type="text/css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Katibeh&display=swap" type="text/css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   <style>
+img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto; } ::selection { background: rgba(0, 0, 0, 0.3); } ::-moz-selection { background: rgba(0, 0, 0, 0.3); } ::-webkit-scrollbar { width: 7px; } ::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.3); } * { margin: 0px; padding: 0px; transition: 0.3s; font-family: Katibeh; color: rgba(255, 255, 255, 0.8); font-weight: normal; } .btn, h1, h2, h3, span.title { font-family: 'Metal Mania', Katibeh; } body { background: #1d3453 url(https://starrise7.github.io/stella/posts/20bg.webp) fixed top center; background-size: cover; font-size: 17px; direction: rtl; display: flex; flex-direction: column; align-items: center; font-size: 21px; } A { text-decoration: none; } A:hover { opacity: 0.7; } img { box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5); } #stella { width: 700px; box-sizing: border-box; margin: 20px; display: flex; flex-direction: column; background: rgba(1, 0, 15, 0.5); border-radius: 10px; box-shadow: 0 0 20px 0 white; animation: stella 1s ease-in-out alternate infinite; } @keyframes stella { to { box-shadow: 0 0 5px 0 white; } } .btn { background: url(https://s6.uupload.ir/files/btn1_w298.png); height: 70px; width: 250px; max-width: 100%; border: 0; font-size: 32px; cursor: pointer; box-shadow: 0 0 10px 0 black; border-radius: 5px; } .btn:hover { filter: brightness(1.5); } .page { margin: 10px; background-color: rgba(255, 255, 255, 0.1); background-image: url(https://s6.uupload.ir/files/c1_0sf2.png), url(https://s6.uupload.ir/files/c2_3bbi.png), url(https://s6.uupload.ir/files/c3_lb82.png), url(https://s6.uupload.ir/files/c4_rpqq.png); background-position: top left, top right, bottom right, bottom left; background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; background-size: 50px; border: 1px rgba(255, 255, 255, 0.1) solid; height: 100%; padding: 10px; display: none; opacity: 0; justify-content: space-around; align-items: center; } .page.active { display: flex; animation: FadeIn 1s ease-in-out forwards; } @keyframes FadeIn { 0% { opacity: 0; } 100% { opacity: 1; } } .about { padding: 10px; background: linear-gradient(to right, #1d3453, #2f4c52); border: 1px rgba(255, 255, 255, 0.1) solid; opacity: 0.9; text-align: justify; line-height: 0.9; } .column { display: flex; flex-direction: column; width: 40%; gap: 20px; align-items: center; justify-content: center; height: 100%; } .icons { display: flex; justify-content: space-between; width: 100%; } .icons a { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); background: #1d3453; height: 56px; width: 56px; box-sizing: border-box; padding: 17px 20px; font-size: 15px; } .center { text-align: center; } .postbar { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px } .postbar a.btn, .postbar span.btn { display: inline-block; font-size: 20px; text-align: center; height: 39px; width: 140px; background-size: cover; padding: 7px; box-sizing: border-box; opacity: 1; } .post { width: 100%; } .title h3, span.title { text-align: center; font-size: 30px; } .post .title { padding: 40px 0; background: url(https://s6.uupload.ir/files/top_mw0.png) top no-repeat, url(https://s6.uupload.ir/files/bottom_fqv1.png) bottom no-repeat; background-size: 300px; width: 100%; display: block; } .flex { display: flex; justify-content: center; gap: 20px; margin-top: 14px; } .flex2 { display: flex; justify-content: space-around; width: 100%; } .info { display: block; text-align: center; margin-bottom: 10px; opacity: 0.7; } #links .column { gap: 40px; } #links.page { flex-direction: column; align-items: center; } #links.page a { display: block; } .center { text-align: center; } .themeby { animation: themeby 1s alternate infinite; opacity: 0; padding-bottom: 20px; } @keyframes themeby { to { opacity: 1; } }
+   </style>
+   <script src="http://theme.blogfa.com/public/theme.1.2.js" type="text/javascript"></script>
+   <script type="text/javascript">
+      try {
+         cmt_caption[0] = "All Comments";
+         cmt_caption[1] = "No Comments";
+         cmt_caption[2] = "One Comment";
+         cmt_caption[3] = "Comments";
+         cmt_blogid = "<-BlogId->";
+      }
+      catch (e) { }
+   </script>
+</head>
+
+<body>
+   <div id="stella">
+      <div class="page active" id="home">
+         <div class="column">
+            <button class="btn" onclick="showTab('posts')">Posts</button>
+            <button class="btn" onclick="showTab('links')">Links</button>
+            <a href="http://stella.blogfa.com" style="opacity: 1;"><button class="btn">Designer</button></a>
+            <BlogProfile>
+               <div class="about">
+                  <-BlogAbout->
+               </div>
+            </BlogProfile>
+         </div>
+         <div class="column">
+            <a href="<-BlogUrl->">
+               <h1>
+                  <-BlogTitle->
+               </h1>
+            </a>
+            <h2 class="center">
+               <-BlogDescription->
+            </h2>
+            <BlogProfile><img src="<-BlogPhotoLink->" alt="<-BlogTitle->"></BlogProfile>
+            <div class="icons">
+               <a href="/"><i class="fa-solid fa-home"></i></a>
+               <a href="/profile"><i class="fa-solid fa-user"></i></a>
+               <a href="/posts"><i class="fa-solid fa-list"></i></a>
+               <a href="http://stella.blogfa.com"><i class="fa-solid fa-star"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="page" id="posts">
+         <div class="postbar">
+            <button class="btn" onclick="showTab('home')">Home</button>
+            <BLOGFA>
+               <div class="post">
+                  <div class="title">
+                     <a href="<-PostLink->#posts">
+                        <h3>
+                           <-PostTitle->
+                        </h3>
+                     </a>
+                     <span class="info">
+                        <-PostDate->
+                           <-PostTime-> ~ <-PostAuthor->
+                     </span>
+                  </div>
+                  <-PostContent->
+                     <BlogPostTagsBlock>
+                        <div class="flex">
+                           <BlogPostTags><a href="<-TagLink->#posts">#<-TagName-></a></BlogPostTags>
+                        </div>
+                     </BlogPostTagsBlock>
+                     <div class="flex">
+                        <BlogExtendedPost><a href="<-PostLink->#posts" class="btn">Read More</a></BlogExtendedPost>
+                        <BlogComment><span class="btn" dir="rtl" comment-for="<-PostId->"></span>
+                        </BlogComment>
+                     </div>
+               </div>
+            </BLOGFA>
+            <BlogNextAndPreviousBlock>
+               <div class="flex2">
+                  <BlogPreviousPageBlock>
+                     <a href="<-BlogPreviousPageLink->#posts" class="btn">Next</a>
+                  </BlogPreviousPageBlock>
+                  <BlogNextPageBlock>
+                     <a href="<-BlogNextPageLink->#posts" class="btn">Previes</a>
+                  </BlogNextPageBlock>
+               </div>
+            </BlogNextAndPreviousBlock>
+         </div>
+      </div>
+      <div class="page" id="links">
+         <button class="btn" onclick="showTab('home')">Home</button>
+         <div class="flex2">
+            <div class="column">
+               <BlogLinkDumpBlock>
+                  <div class="post">
+                     <span class="title">Daily</span>
+                     <BlogLinkDump>
+                        <a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                           <-LinkTitle->
+                        </a>
+                     </BlogLinkDump>
+                  </div>
+               </BlogLinkDumpBlock>
+               <BlogArchiveBlock>
+                  <div class="post">
+                     <span class="title">Archive</span>
+                     <BlogArchive>
+                        <a href="<-ArchiveLink->#posts">
+                           <-ArchiveTitle->
+                        </a>
+                     </BlogArchive>
+                  </div>
+               </BlogArchiveBlock>
+               <BlogCategoriesBlock>
+                  <div class="post">
+                     <span class="title">Categories</span>
+                     <BlogCategories>
+                        <a href="<-CategoryLink->#posts">
+                           <-CategoryName->
+                        </a>
+                     </BlogCategories>
+                  </div>
+               </BlogCategoriesBlock>
+            </div>
+            <div class="column">
+               <BlogTagsBlock>
+                  <div class="post">
+                     <span class="title">Tags</span>
+                     <BlogTags>
+                        <a href="<-TagLink->#posts">
+                           <-TagName->
+                        </a>
+                     </BlogTags>
+                  </div>
+               </BlogTagsBlock>
+               <BlogAuthorsBlock>
+                  <div class="post">
+                     <span class="title">Authors</span>
+                     <BlogAuthors>
+                        <a href="<-AuthorLink->#posts">
+                           <-AuthorName->
+                        </a>
+                     </BlogAuthors>
+                  </div>
+               </BlogAuthorsBlock>
+               <BlogLinksBlock>
+                  <div class="post">
+                     <span class="title">Links</span>
+                     <BlogLinks>
+                        <a href="<-LinkUrl->" target="_blank">
+                           <-LinkTitle->
+                        </a>
+                     </BlogLinks>
+                  </div>
+               </BlogLinksBlock>
+               <div class="post center">
+                  <span class="title">Other</span>
+                  <-BlogCustomHtml->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <a href="http://stella.blogfa.com" class="themeby">قالب طراحی شده توسط : استلا &#9733; Stella</a>
+   <script src="https://starrise7.github.io/stella/posts/20.js"></script>
+</body>
+<!-- Theme BY : Stella.BlogFa.Com -->
+</html>
