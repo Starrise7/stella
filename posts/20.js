@@ -1,3 +1,4 @@
+//BY Stella.BlogFa.Com
 function showTab(tabId) {
    const pages = document.querySelectorAll(".page");
    pages.forEach(page => {
@@ -21,3 +22,4 @@ window.addEventListener('hashchange', () => {
    const hash = window.location.hash.substring(1);
    showTab(hash);
 });
+//BY Stella.BlogFa.Com
