@@ -42,7 +42,11 @@ if (document.currentScript && document.currentScript.src) {
    else if (window.attachEvent)
       window.attachEvent("onload", updateAllComments);
 
-   const credit = document.createElement("p");
-   credit.innerHTML = 'کد نمایش تعداد نظرات توسط : <a href="http://stella.blogfa.com"> استلا &#9733; Stella</a>';
-   document.body.appendChild(credit);
+   const marker = Array.from(document.body.getElementsByTagName("*"))
+                        .find(el => el.textContent.includes("<-BlogCustomHtml->"));
+    
+    if (marker) {
+        // اضافه کردن متن زیر آن
+        marker.insertAdjacentHTML('afterend', '<p>کد نمایش تعداد نظرات توسط : <a href="http://stella.blogfa.com"> استلا &#9733; Stella</a></p>');
+    }
 }
