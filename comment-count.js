@@ -44,7 +44,7 @@ if (document.currentScript && document.currentScript.src) {
 
       window.addEventListener("DOMContentLoaded", () => {
          const credit = document.createElement("p");
-         credit.innerHTML = 'کد نمایش تعداد نظرات توسط : <a href="http://stella.blogfa.com"> استلا &#9733; Stella</a>';
+         credit.innerHTML = 'کد نمایش تعداد نظرات آرشیو شده توسط : <a href="http://stella.blogfa.com"> استلا &#9733; Stella</a>';
          credit.style.direction = 'rtl';
          document.body.appendChild(credit);
       });
