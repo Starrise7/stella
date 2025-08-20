@@ -1,0 +1,18 @@
+
+اینو بذار توی قسمت کد های وبلاگت
+<script src="https://starrise7.github.io/stella/comment-count.js"></script>
+
+
+رو پیدا کن و بجاش اینو بذار <body>
+<body data-blogid="<-BlogId->">
+
+
+
+
+الان معمولا این کد برای قالب های من یا قالب ها پیشفرض بلاگفا کار میکنه ولی اگه به هر دلیلی کار نکرد
+
+این رو پیدا کن
+<BlogComment>این دو تگ و کلا هر چیزی بینشون هست</BlogComment>
+
+و این رو بجاش بذار
+<BlogComment><span dir="rtl" comment-for="<-PostId->"></span></BlogComment>
