@@ -1,4 +1,5 @@
 اینو بذار توی قسمت کد های وبلاگت
+
 <script src="https://starrise7.github.io/stella/comment-count.js"></script>
 <script>
    var noCommentText = "بدون نظر"; 
@@ -6,9 +7,10 @@
 </script>
 
 
-رو پیدا کن و بجاش اینو بذار <body>
-<body data-blogid="<-BlogId->">
 
+رو پیدا کن و بجاش اینو بذار <body>
+
+<body data-blogid="<-BlogId->">
 
 
 
@@ -17,5 +19,10 @@
 این رو پیدا کن
 <BlogComment>این دو تگ و کلا هر چیزی بینشون هست</BlogComment>
 
+
+
 و این رو بجاش بذار
+
 <BlogComment><span dir="rtl" comment-for="<-PostId->"></span></BlogComment>
+
+تمام :D
