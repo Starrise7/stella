@@ -21,14 +21,14 @@ if (document.currentScript && document.currentScript.src) {
 
             const count = doc.querySelectorAll("div.box").length;
 
-            el.innerHTML = `${count} نظر`;
+            const text = (count === 0) ? noCommentText : `${count} ${commentText}`;
 
             const url = `/comments/?blogid=${blogid}&postid=${postid}`;
             if (window.innerWidth > 700) {
-               el.innerHTML = `<a href="javascript:void(0)" onclick="window.open('${url}','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,width=500,height=500')">${count} نظر</a>`;
+               el.innerHTML = `<a href="javascript:void(0)" onclick="window.open('${url}','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,width=500,height=500')">${text}</a>`;
             } else {
-               el.innerHTML = `<a href="${url}">${count} نظر</a>`;
-            }
+               el.innerHTML = `<a href="${url}">${text}</a>`;
+            }            
 
          } catch (e) {
             console.error(`خطا در گرفتن نظرات برای پست ${postid}:`, e);
