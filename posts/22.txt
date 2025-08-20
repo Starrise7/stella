@@ -1,6 +1,9 @@
-
 اینو بذار توی قسمت کد های وبلاگت
 <script src="https://starrise7.github.io/stella/comment-count.js"></script>
+<script>
+   var noCommentText = "بدون نظر"; 
+   var commentText = "نظر";
+</script>
 
 
 رو پیدا کن و بجاش اینو بذار <body>
