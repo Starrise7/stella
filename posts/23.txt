@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- Theme BY : Stella.BlogFa.Com -->
+   <link href="<-BlogPhotoLink->" rel="shortcut icon">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>
+      <-BlogAndPostTitle->
+   </title>
+   <meta http-equiv="content-language" content="fa">
+   <meta name="description" content="<-BlogMetaDescription->">
+   <meta name="generator" content="blogfa.com">
+   <meta property="og:title" content="<-AutoPageTitle->">
+   <meta property="og:site_name" content="<-BlogTitle->">
+   <meta property="og:description" content="<-BlogMetaDescription->">
+   <meta name="twitter:title" content="<-AutoPageTitle->">
+   <meta name="twitter:description" content="<-BlogMetaDescription->">
+   <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" type="text/css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   <style>
+img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto; } ::selection { background: rgba(0, 0, 0, 0.1); } ::-moz-selection { background: rgba(0, 0, 0, 0.1); } ::-webkit-scrollbar { width: 7px; } ::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.1); } * { margin: 0px; padding: 0px; transition: 0.5s; font-family: AppleEmoji, 'Baloo Bhaijaan 2', tahoma; text-decoration: none; color: #444; } body { background-image: repeating-linear-gradient(40.7deg, white, white 14px, rgba(0, 0, 0, 0.03) 0, rgba(0, 0, 0, 0.03) 24px); font-size: 16px; direction: rtl; } A { font-weight: bold; } A:hover { opacity: 0.7; } img { border-radius: 5px; } #stella { margin: 20px auto; width: 500px; border-radius: 7px; border: 1px solid #aeaeae; background: white; display: flex; flex-direction: column; box-sizing: border-box; } .top { padding: 20px 10px 10px 10px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; gap: 10px; } .home { width: 100%; padding: 0 10px; box-sizing: border-box; display: flex; justify-content: space-between; } h1 { font-size: 20px; } h2 { font-size: 16px; margin: 0 10px; } i { color: #939393; } .imgbar { padding: 10px; gap: 10px; background: #f6f6f6; border-radius: 7px; border: 1px solid #aeaeae; display: flex; justify-content: center; margin: 10px; } .imgbar img { min-width: 0; border: 1px solid rgba(0, 0, 0, 0.2); box-sizing: border-box; } .menu { display: flex; justify-content: space-around; gap: 10px } .menu a { width: 25%; margin-top: 5px; } a.cmnt { width: 140px; display: flex; gap: 10px; align-items: center; justify-content: center; } .btn { display: inline-block; border: 3px #d6d6d6 solid; border-radius: 10px; text-align: center; padding: 3px 10px 0 10px; cursor: pointer; } .btn:hover { color: white; background: #939393; border: 3px #939393 solid; } .btn:hover i, .btn:hover span { color: white; } .postbar { display: none; } .postbar.active { display: block; } .post { width: 100%; padding: 10px; border-bottom: 1px solid #aeaeae; box-sizing: border-box; } .post .title { display: flex; justify-content: space-between; align-items: center; padding: 0 10px; margin-bottom: 20px; font-size: 17px; font-weight: bold; flex-wrap: wrap; gap: 10px; } .info { color: #939393; font-size: 10px; } .pages { padding: 20px; text-align: center; border-bottom: 1px solid #aeaeae; } .p { float: right; } .n { float: left; } .column { display: flex; flex-direction: column; } ul, ul a { list-style: none; font-weight: normal; } .themeby { text-align: center; margin-top: 10px; font-size: 14px; animation: themeby 1s alternate infinite; } .gap { display: flex; gap: 10px; flex-wrap: wrap; } .center { text-align: center; } .small { font-size: 10px; } @keyframes themeby { from { opacity: 0; } to { opacity: 1; } }
+   </style>
+   <script src="https://starrise7.github.io/stella/comment-count.js"></script>
+   <script>
+      var noCommentText = "Nothing yet";
+      var commentText = "Comments";
+   </script>
+</head>
+
+<body data-blogid="<-BlogId->">
+   <div id="stella">
+      <div class="top">
+         <div class="home">
+            <a href="/">
+               <h1>
+                  <-BlogTitle->
+               </h1>
+            </a>
+            <a href="/"><i class="fa-solid fa-home"></i></a>
+         </div>
+         <h2>
+            <-BlogDescription->
+         </h2>
+         <div class="menu">
+            <a class="btn" onclick="showTab('links')">Links</a>
+            <a class="btn" onclick="showTab('posts')">Posts</a>
+            <a href="http://stella.blogfa.com" class="btn">Designer</a>
+         </div>
+      </div>
+      <div id="posts" class="active postbar">
+         <div class="imgbar">
+            <img src="https://s6.uupload.ir/files/img1_kzq9.jpg" alt="<-BlogTitle->">
+            <img src="https://s6.uupload.ir/files/img3_16ry.jpg" alt="<-BlogTitle->">
+            <img src="https://s6.uupload.ir/files/img2_7moz.jpg" alt="<-BlogTitle->">
+         </div>
+         <BLOGFA>
+            <div class="post">
+               <div class="title">
+                  <div class="column">
+                     <a href="<-PostLink->">
+                        <h3>
+                           <-PostTitle->
+                        </h3>
+                     </a>
+                     <span class="info">
+                        <-PostDate->
+                           <-PostTime-> ~ <-PostAuthor->
+                     </span>
+                  </div>
+
+                  <BlogComment><a class="cmnt btn"><i class="fa-regular fa-comment"></i><span dir="rtl"
+                           comment-for="<-PostId->"></span></a></BlogComment>
+               </div>
+               <-PostContent->
+                  <BlogExtendedPost><a href="<-PostLink->" class="n">. . . Read More</a></BlogExtendedPost>
+                  <BlogPostTagsBlock>
+                     <div class="gap">
+                        <BlogPostTags>
+                           <a href="<-TagLink->" class="btn small">#<-TagName-></a>
+                        </BlogPostTags>
+                     </div>
+                  </BlogPostTagsBlock>
+            </div>
+         </BLOGFA>
+         <BlogNextAndPreviousBlock>
+            <div class="pages">
+               <BlogPreviousPageBlock>
+                  <div class="p"><a href="<-BlogPreviousPageLink->" class="fa-solid fa-chevron-right"></a></div>
+               </BlogPreviousPageBlock>
+               <a href="/posts/">All Posts</a>
+               <BlogNextPageBlock>
+                  <div class="n"><a href="<-BlogNextPageLink->" class="fa-solid fa-chevron-left"></a></div>
+               </BlogNextPageBlock>
+            </div>
+         </BlogNextAndPreviousBlock>
+      </div>
+      <div id="links" class="postbar">
+         <BlogProfile>
+            <div class="post center">
+               <BlogPhoto><img src="<-BlogPhotoLink->" alt="<-BlogTitle->"><br></BlogPhoto>
+               <-BlogAbout->
+                  <BlogProfileLinkBlock>
+                     <br>
+                     <a href="<-BlogProfileLink->">. . . More</a>
+                  </BlogProfileLinkBlock>
+            </div>
+         </BlogProfile>
+         <BlogLinkDumpBlock>
+            <div class="post">
+               <div class="title">Daily</div>
+
+               <ul>
+                  <BlogLinkDump>
+                     <li><a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->">
+                           <-LinkTitle->
+                        </a></li>
+                  </BlogLinkDump>
+                  <li><a href="/links" onclick="return openlinks();">All Dailys</a></li>
+               </ul>
+            </div>
+         </BlogLinkDumpBlock>
+         <BlogArchiveBlock>
+            <div class="post">
+               <div class="title">Archive</div>
+
+               <ul>
+                  <BlogArchive>
+                     <li><a href="<-ArchiveLink->">
+                           <-ArchiveTitle->
+                        </a></li>
+                  </BlogArchive>
+               </ul>
+            </div>
+         </BlogArchiveBlock>
+         <BlogCategoriesBlock>
+            <div class="post">
+               <div class="title">Categories</div>
+               <ul>
+                  <BlogCategories>
+                     <li><a href="<-CategoryLink->">
+                           <-CategoryName->
+                        </a></li>
+                  </BlogCategories>
+               </ul>
+            </div>
+         </BlogCategoriesBlock>
+         <BlogTagsBlock>
+            <div class="post">
+               <div class="title">Tags</div>
+               <div class="gap">
+                  <BlogTags>
+                     <a href="<-TagLink->" class="btn">
+                        #<-TagName-> (<-TagCount->)
+                     </a>
+                  </BlogTags>
+               </div>
+            </div>
+         </BlogTagsBlock>
+         <BlogAuthorsBlock>
+            <div class="post">
+               <div class="title">Authors</div>
+
+               <ul>
+                  <BlogAuthors>
+                     <li><a href="<-AuthorLink->">
+                           <-AuthorName->
+                        </a></li>
+                  </BlogAuthors>
+               </ul>
+            </div>
+         </BlogAuthorsBlock>
+         <BlogLinksBlock>
+            <div class="post">
+               <div class="title">Links</div>
+               <ul>
+                  <BlogLinks>
+                     <li><a href="<-LinkUrl->" target="_blank">
+                           <-LinkTitle->
+                        </a></li>
+                  </BlogLinks>
+               </ul>
+            </div>
+         </BlogLinksBlock>
+      </div>
+      <div class="center">
+         <-BlogCustomHtml->
+      </div>
+      <a href="http://stella.blogfa.com" class="themeby">قالب طراحی شده توسط : استلا &#9733; Stella</a>
+   </div>
+   <script>
+      function showTab(tabId) {
+         document.querySelectorAll('.postbar').forEach(tab => {
+            tab.classList.remove('active');
+         });
+         document.getElementById(tabId).classList.add('active');
+         event.target.classList.add('active');
+      }
+   </script>
+</body>
+<!-- Theme BY : Stella.BlogFa.Com -->
+
+</html>
