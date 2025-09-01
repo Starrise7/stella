@@ -190,15 +190,7 @@ img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto;
       </div>
       <a href="http://stella.blogfa.com" class="themeby">قالب طراحی شده توسط : استلا &#9733; Stella</a>
    </div>
-   <script>
-      function showTab(tabId) {
-         document.querySelectorAll('.postbar').forEach(tab => {
-            tab.classList.remove('active');
-         });
-         document.getElementById(tabId).classList.add('active');
-         event.target.classList.add('active');
-      }
-   </script>
+   <script src="https://starrise7.github.io/stella/posts/23.js"></script>
 </body>
 <!-- Theme BY : Stella.BlogFa.Com -->
 
