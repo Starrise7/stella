@@ -126,7 +126,7 @@ window.onload = function () {
                   padding: 10px;
                   box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
                   box-sizing: border-box;
-                  backgorund: var(--color2) !important;
+                  background: var(--color2) !important;
                }
 
                .formbox .head {
@@ -174,7 +174,9 @@ window.onload = function () {
           `;
                doc.head.appendChild(style);
 
-               iframe.style.height = doc.body.scrollHeight + "px";
+               setInterval(() => {
+                  iframe.style.height = doc.body.scrollHeight + "px";
+               }, 500);               
 
             } catch (e) {
                console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
