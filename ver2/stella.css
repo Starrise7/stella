@@ -193,13 +193,15 @@ a {
 }
 
 header {
-   background: var(--color2);
    padding: 20px 30px;
    color: var(--color1);
    position: sticky;
    top: 0;
    z-index: 2;
    border-bottom: 2px solid var(--color2);
+   background: var(--color4);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
 }
 
 header a {
@@ -213,9 +215,6 @@ header a span {
 
 #header.scrolled {
    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
-   background: var(--color4);
-   backdrop-filter: blur(20px);
-   -webkit-backdrop-filter: blur(20px);
 }
 
 nav {
@@ -607,7 +606,7 @@ button.preview {
    opacity: 1;
 }
 
-#about {
+#about .flex {
    background: var(--color5);
    margin-top: -8px;
    color: #FFFFFF;
@@ -725,6 +724,11 @@ body.post-page .post-title,
 body.post-page #postlink {
    display: none !important;
 }
+
+body.post-page #posts .swiper-slide:hover>.content {
+   transform: none;
+   padding-top: 0;
+}
 body.other-page #main-title {
    color: var(--color1);
    font-size: 32px;
@@ -751,16 +755,7 @@ body.post-page #posts .swiper-slide {
    padding: 20px;
 }
 
-.big iframe {
-   height: 650px;
-}
-
-.big2 iframe {
-   height: 870px;
-}
-
 iframe {
-   height: 430px;
    width: 100%;
 }
 
@@ -797,18 +792,6 @@ iframe {
 }
 
 @media screen and (max-width: 460px) {
-   .big iframe {
-      height: 1260px;
-   }
-
-   .big2 iframe {
-      height: 1260px;
-   }
-
-   iframe {
-      height: 735px;
-   }
-
    .title h2,
    .title span {
       font-size: 16px;
