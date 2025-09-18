@@ -709,6 +709,10 @@ body.special-page #catgory,
 body.special-page #best,
 body.special-page #about,
 body.special-page #whyme,
+body.post-page #catgory,
+body.post-page #best,
+body.post-page #about,
+body.post-page #whyme,
 body.other-page #catgory,
 body.other-page .hero-text,
 body.post-page .section .title,
@@ -718,7 +722,7 @@ body.other-page #posts .swiper-button-next,
 body.special-page #posts .swiper-button-prev,
 body.other-page #posts .swiper-button-prev,
 body.post-page .post-title,
-body.post-page .postimg {
+body.post-page #postlink {
    display: none !important;
 }
 body.other-page #main-title {
