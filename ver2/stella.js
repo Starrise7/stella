@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
    if (path.startsWith("/post/")) {
       const postTitleElement = document.querySelector("h3.post-title");
       const mainTitle = document.getElementById("main-title");
+      const postlink = document.getElementById("postlink");
+      const postimg = document.getElementById("postimg");
       document.getElementById("imgbox").innerHTML = `
-      <a href="<-PostLink->"><img src="https://starrise7.github.io/stella/posts/<-PostId->.webp"
-               alt="<-PostTitle->" loading="lazy"></a>`
-
+      <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`
       if (postTitleElement && mainTitle) {
          const titleText = postTitleElement.textContent.trim();
          mainTitle.innerText = titleText;
