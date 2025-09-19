@@ -1,45 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
    const path = window.location.pathname;
-   const isOtherPage =
-      path.startsWith("/post/") ||
-      path.startsWith("/tag/") ||
-      path.startsWith("/category/");
+   const search = window.location.search;
 
-   if (isOtherPage) {
+   if (path.startsWith("/post/") || path.startsWith("/tag/") || path.startsWith("/category/")) {
       document.body.classList.add("other-page");
    }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-   const search = window.location.search;
-   const isSpecialPage =
-      search.includes("?p=");
-
-   if (isSpecialPage) {
+   if (search.includes("?p=")) {
       document.body.classList.add("special-page");
    }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-   const path = window.location.pathname;
-   const search = window.location.search;
-
-   const isPostPage =
-      path.startsWith("/post/");
-
-   if (isPostPage) {
+   if (path.startsWith("/post/")) {
       document.body.classList.add("post-page");
    }
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-   const path = window.location.pathname;
 
    if (path.startsWith("/tag/") || path.startsWith("/category/")) {
       const parts = path.split("/");
       const lastPart = parts[parts.length - 1];
       const label = decodeURIComponent(lastPart || "").replace(/[-_]/g, " ");
-
       const mainTitle = document.getElementById("main-title");
       if (mainTitle) mainTitle.innerText = label;
    }
@@ -49,143 +27,142 @@ document.addEventListener("DOMContentLoaded", function () {
       const mainTitle = document.getElementById("main-title");
       const postlink = document.getElementById("postlink");
       const postimg = document.getElementById("postimg");
-      document.getElementById("imgbox").innerHTML = `
-      <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`
+      const imgbox = document.getElementById("imgbox");
+
       if (postTitleElement && mainTitle) {
-         const titleText = postTitleElement.textContent.trim();
-         mainTitle.innerText = titleText;
+         mainTitle.innerText = postTitleElement.textContent.trim();
+      }
+
+      if (postlink && postimg && imgbox) {
+         imgbox.innerHTML = `
+            <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`;
       }
    }
 });
 
+const iframe = document.getElementById("comments");
+if (iframe) {
+   iframe.onload = function () {
+      try {
+         const doc = iframe.contentDocument || iframe.contentWindow.document;
 
-iframe.onload = function () {
-   try {
-      const doc = iframe.contentDocument || iframe.contentWindow.document;
+         // تزریق استایل
+         const style = doc.createElement("style");
+         style.textContent = `@import url('https://v1.fontapi.ir/css/Shabnam');
 
-      const style = doc.createElement("style");
-      style.textContent = `@import url('https://v1.fontapi.ir/css/Shabnam');
+         * {
+            font-family: 'Shabnam', Tahoma, sans-serif;
+            border: none !important;
+            box-sizing: border-box;
+            border-radius: 0 !important;
+            color: var(--color1) !important;
+         }
 
-               * {
-                  font-family: 'Shabnam', Tahoma, sans-serif;
-                  border: none !important;
-                  box-sizing: border-box;
-                  border-radius: 0 !important;
-                  color: var(--color1) !important;
-               }
+         body {
+            background: none;
+         }
 
-               body {
-                  background: none;
-               }
+         #header,
+         input[name="cmtemail"],
+         label[for="cmtemail"],
+         span:first-child,
+         input[type="checkbox"],
+         label[for="chkPrivate"],
+         label[for="chkSave"],
+         a[style="font-size:8pt"] {
+            display: none;
+         }
 
-               #header,
-               input[name="cmtemail"],
-               label[for="cmtemail"],
-               span:first-child,
-               input[type="checkbox"],
-               label[for="chkPrivate"],
-               label[for="chkSave"],
-               a[style="font-size:8pt"] {
-                  display: none;
-               }
+         #content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 900px;
+            max-width: 100%;
+         }
 
-               #content {
-                  display: flex;
-                  flex-direction: column;
-                  gap: 10px;
-                  width: 900px;
-                  max-width: 100%;
-               }
+         input,
+         textarea {
+            outline: 0 !important;
+            box-shadow: none !important;
+            background: var(--color53);
+            padding: 10px !important;
+            margin: 5px 0;
+         }
 
-               input,
-               textarea {
-                  outline: 0 !important;
-                  box-shadow: none !important;
-                  background: var(--color53);
-                  padding: 10px !important;
-                  margin: 5px 0;
-               }
+         .box,
+         .formbox {
+            padding: 10px;
+            box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+            box-sizing: border-box;
+            background: var(--color2) !important;
+         }
 
-               .box,
-               .formbox {
-                  padding: 10px;
-                  box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
-                  box-sizing: border-box;
-                  background: var(--color2) !important;
-               }
+         .formbox .head {
+            font-size: 20px !important;
+            color: var(--color5) !important;
+            background: none !important;
+            font-weight: bold;
+         }
 
-               .formbox .head {
-                  font-size: 20px !important;
-                  color: var(--color5) !important;
-                  background: none !important;
-                  font-weight: bold;
-               }
+         .box .author {
+            font-size: 16px !important;
+            color: var(--color1) !important;
+         }
 
-               .box .author {
-                  font-size: 16px !important;
-                  color: var(--color1) !important;
-               }
+         .reply .rbox {
+            background: var(--color3);
+         }
 
-               .reply .rbox {
-                  background: var(--color3);
-               }
+         .btn {
+            background: var(--color5) !important;
+            padding: 10px 0 !important;
+            width: 100% !important;
+            height: 40px !important;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+         }
 
-               .btn {
-                  background: var(--color5) !important;
-                  padding: 10px 0 !important;
-                  width: 100% !important;
-                  height: 40px !important;
-                  font-weight: bold;
-                  font-size: 14px;
-                  cursor: pointer;
-               }
+         .btn:hover {
+            background: #3E5F36 !important;
+         }
 
-               .btn:hover {
-                  background: #3E5F36 !important;
-               }
+         A {
+            COLOR: var(--color5) !important;
+            transition: 0.3s;
+         }
 
-               A {
-                  COLOR: var(--color5) !important;
-                  transition: 0.3s;
-               }
+         A:hover {
+            COLOR: #3E5F36 !important;
+         }
 
-               A:hover {
-                  COLOR: #3E5F36 !important;
-               }
+         #capspace {
+            margin-top: -30px !important;
+         }`;
+         doc.head.appendChild(style);
 
-               #capspace {
-                  margin-top: -30px !important;
-               }`;
-      doc.head.appendChild(style);
+         const resizeIframe = () => {
+            const body = doc.body;
+            const html = doc.documentElement;
+            const height = Math.max(
+               body.scrollHeight, body.offsetHeight,
+               html.clientHeight, html.scrollHeight, html.offsetHeight
+            );
+            iframe.style.height = height + "px";
+            console.log("Calculated height:", height);
+         };
 
-      // تابع تنظیم ارتفاع
-      const resizeIframe = () => {
-         const body = doc.body;
-         const html = doc.documentElement;
+         setTimeout(resizeIframe, 200);
+         setInterval(resizeIframe, 500);
 
-         const height = Math.max(
-            body.scrollHeight,
-            body.offsetHeight,
-            html.clientHeight,
-            html.scrollHeight,
-            html.offsetHeight
-         );
+      } catch (e) {
+         console.error("خطا در آیفریم:", e);
+      }
+   };
+}
 
-         iframe.style.height = height + "px";
-         console.log("Calculated height:", height);
-      };
-
-      // یکبار بعد از لود
-      setTimeout(resizeIframe, 200);
-
-      // هر نیم ثانیه آپدیت بشه
-      setInterval(resizeIframe, 500);
-
-   } catch (e) {
-      console.error("خطا در تغییر CSS آیفریم:", e);
-   }
-};
-
+               
 
 const navbar = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -314,8 +291,3 @@ bell.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
    notifBox.style.display = "none";
 });
-
-
-console.log('body has post-page?', document.body.classList.contains('post-page'));
-console.log('comments container exists?', !!document.querySelector('#comments'), document.querySelector('#comments'));
-
