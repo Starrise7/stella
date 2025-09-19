@@ -59,27 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-window.onload = function () {
-   document.querySelectorAll(".iframe").forEach(container => {
-      const src = container.getAttribute("data-src");
-      if (!src) return;
+iframe.onload = function () {
+   try {
+      const doc = iframe.contentDocument || iframe.contentWindow.document;
 
-      const iframe = document.createElement("iframe");
-      iframe.src = src;
-      iframe.style.border = "0";
-      iframe.style.display = "block";
-      iframe.style.width = "100%";
-
-      container.appendChild(iframe);
-
-      if (container.id === "comments") {
-         iframe.onload = function () {
-            try {
-               const doc = iframe.contentDocument || iframe.contentWindow.document;
-
-               const style = doc.createElement("style");
-               style.textContent = `
-               @import url('https://v1.fontapi.ir/css/Shabnam');
+      const style = doc.createElement("style");
+      style.textContent = `@import url('https://v1.fontapi.ir/css/Shabnam');
 
                * {
                   font-family: 'Shabnam', Tahoma, sans-serif;
@@ -170,35 +155,37 @@ window.onload = function () {
 
                #capspace {
                   margin-top: -30px !important;
-               }
-          `;
-               doc.head.appendChild(style);
+               }`;
+      doc.head.appendChild(style);
 
-               const resizeIframe = () => {
-                  const doc = iframe.contentDocument || iframe.contentWindow.document;
-                  if (!doc) return;
-               
-                  const height = Math.max(
-                     doc.body.scrollHeight,
-                     doc.documentElement.scrollHeight,
-                     doc.body.offsetHeight,
-                     doc.documentElement.offsetHeight
-                  );
-                  iframe.style.height = height + "px";
-               };
-               
-               setTimeout(resizeIframe, 100);
-               
-               const interval = setInterval(resizeIframe, 500);
+      // تابع تنظیم ارتفاع
+      const resizeIframe = () => {
+         const body = doc.body;
+         const html = doc.documentElement;
 
-            } catch (e) {
-               console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
-            }
-         };
-      }
-   });
+         const height = Math.max(
+            body.scrollHeight,
+            body.offsetHeight,
+            html.clientHeight,
+            html.scrollHeight,
+            html.offsetHeight
+         );
+
+         iframe.style.height = height + "px";
+         console.log("Calculated height:", height);
+      };
+
+      // یکبار بعد از لود
+      setTimeout(resizeIframe, 200);
+
+      // هر نیم ثانیه آپدیت بشه
+      setInterval(resizeIframe, 500);
+
+   } catch (e) {
+      console.error("خطا در تغییر CSS آیفریم:", e);
+   }
 };
-console.log("Iframe height:", iframe.style.height);
+
 
 const navbar = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -331,3 +318,4 @@ closeBtn.addEventListener("click", () => {
 
 console.log('body has post-page?', document.body.classList.contains('post-page'));
 console.log('comments container exists?', !!document.querySelector('#comments'), document.querySelector('#comments'));
+
