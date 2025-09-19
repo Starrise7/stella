@@ -174,9 +174,22 @@ window.onload = function () {
           `;
                doc.head.appendChild(style);
 
-               setInterval(() => {
-                  iframe.style.height = doc.body.scrollHeight + "px";
-               }, 500);               
+               const resizeIframe = () => {
+                  const doc = iframe.contentDocument || iframe.contentWindow.document;
+                  if (!doc) return;
+               
+                  const height = Math.max(
+                     doc.body.scrollHeight,
+                     doc.documentElement.scrollHeight,
+                     doc.body.offsetHeight,
+                     doc.documentElement.offsetHeight
+                  );
+                  iframe.style.height = height + "px";
+               };
+               
+               setTimeout(resizeIframe, 100);
+               
+               const interval = setInterval(resizeIframe, 500);
 
             } catch (e) {
                console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
