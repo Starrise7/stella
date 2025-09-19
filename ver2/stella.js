@@ -198,6 +198,7 @@ window.onload = function () {
       }
    });
 };
+console.log("Iframe height:", iframe.style.height);
 
 const navbar = document.getElementById('header');
 window.addEventListener('scroll', () => {
@@ -326,3 +327,4 @@ bell.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
    notifBox.style.display = "none";
 });
+
