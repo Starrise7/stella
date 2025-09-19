@@ -744,6 +744,9 @@ body.post-page #posts .swiper-slide .iframe {
    width: 100%;
    max-width: 100% !important;
    text-align: right;
+   display: block;
+   height: auto !important;
+   min-height: 500px;
 }
 
 body.post-page #posts .swiper-slide {
@@ -757,6 +760,10 @@ body.post-page #posts .swiper-slide {
 
 iframe {
    width: 100%;
+   display: block;
+   width: 100% !important;
+   height: auto !important;
+   min-height: 500px;
 }
 
 @media screen and (max-width: 750px) {
