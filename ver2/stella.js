@@ -328,3 +328,6 @@ closeBtn.addEventListener("click", () => {
    notifBox.style.display = "none";
 });
 
+
+console.log('body has post-page?', document.body.classList.contains('post-page'));
+console.log('comments container exists?', !!document.querySelector('#comments'), document.querySelector('#comments'));
