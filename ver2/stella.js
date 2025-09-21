@@ -69,17 +69,6 @@ window.onload = function () {
       iframe.style.border = "0";
       iframe.style.display = "block";
       iframe.style.width = "100%";
-      const styles = getComputedStyle(document.documentElement);
-      const color1 = styles.getPropertyValue("--color1");
-      const color2 = styles.getPropertyValue("--color2");
-      const color3 = styles.getPropertyValue("--color3");
-      const color4 = styles.getPropertyValue("--color4");
-      const color5 = styles.getPropertyValue("--color5");
-      doc.documentElement.style.setProperty("--color1", color1);
-      doc.documentElement.style.setProperty("--color2", color2);
-      doc.documentElement.style.setProperty("--color3", color3);
-      doc.documentElement.style.setProperty("--color4", color4);
-      doc.documentElement.style.setProperty("--color5", color5);
 
       container.appendChild(iframe);
 
@@ -87,6 +76,17 @@ window.onload = function () {
          iframe.onload = function () {
             try {
                const doc = iframe.contentDocument || iframe.contentWindow.document;
+               const styles = getComputedStyle(document.documentElement);
+               const color1 = styles.getPropertyValue("--color1");
+               const color2 = styles.getPropertyValue("--color2");
+               const color3 = styles.getPropertyValue("--color3");
+               const color4 = styles.getPropertyValue("--color4");
+               const color5 = styles.getPropertyValue("--color5");
+               doc.documentElement.style.setProperty("--color1", color1);
+               doc.documentElement.style.setProperty("--color2", color2);
+               doc.documentElement.style.setProperty("--color3", color3);
+               doc.documentElement.style.setProperty("--color4", color4);
+               doc.documentElement.style.setProperty("--color5", color5);
 
                const style = doc.createElement("style");
                style.textContent = `
