@@ -747,6 +747,10 @@ body.post-page #posts .swiper-slide .iframe {
    text-align: right;
 }
 
+body.post-page #posts .swiper{
+   height: auto;
+}
+
 body.post-page #posts .swiper-slide {
    width: 900px;
    max-width: 100% !important;
@@ -885,3 +889,4 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
