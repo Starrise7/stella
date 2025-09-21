@@ -459,6 +459,7 @@ h1 {
 .hidden {
    display: none;
    width: 100%;
+   height: auto;
 }
 
 #customization {
@@ -744,8 +745,6 @@ body.post-page #posts .swiper-slide .iframe {
    width: 100%;
    max-width: 100% !important;
    text-align: right;
-   display: block;
-   min-height: 500px;
 }
 
 body.post-page #posts .swiper-slide {
@@ -759,9 +758,6 @@ body.post-page #posts .swiper-slide {
 
 iframe {
    width: 100%;
-   display: block;
-   width: 100% !important;
-   min-height: 500px;
 }
 
 @media screen and (max-width: 750px) {
@@ -889,4 +885,3 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
-
