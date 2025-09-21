@@ -1,23 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
    const path = window.location.pathname;
-   const search = window.location.search;
+   const isOtherPage =
+      path.startsWith("/post/") ||
+      path.startsWith("/tag/") ||
+      path.startsWith("/category/");
 
-   if (path.startsWith("/post/") || path.startsWith("/tag/") || path.startsWith("/category/")) {
+   if (isOtherPage) {
       document.body.classList.add("other-page");
    }
+});
 
-   if (search.includes("?p=")) {
+document.addEventListener("DOMContentLoaded", function () {
+   const search = window.location.search;
+   const isSpecialPage =
+      search.includes("?p=");
+
+   if (isSpecialPage) {
       document.body.classList.add("special-page");
    }
+});
 
-   if (path.startsWith("/post/")) {
+document.addEventListener("DOMContentLoaded", function () {
+   const path = window.location.pathname;
+   const search = window.location.search;
+
+   const isPostPage =
+      path.startsWith("/post/");
+
+   if (isPostPage) {
       document.body.classList.add("post-page");
    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+   const path = window.location.pathname;
 
    if (path.startsWith("/tag/") || path.startsWith("/category/")) {
       const parts = path.split("/");
       const lastPart = parts[parts.length - 1];
       const label = decodeURIComponent(lastPart || "").replace(/[-_]/g, " ");
+
       const mainTitle = document.getElementById("main-title");
       if (mainTitle) mainTitle.innerText = label;
    }
@@ -27,142 +49,275 @@ document.addEventListener("DOMContentLoaded", function () {
       const mainTitle = document.getElementById("main-title");
       const postlink = document.getElementById("postlink");
       const postimg = document.getElementById("postimg");
-      const imgbox = document.getElementById("imgbox");
-
+      document.getElementById("imgbox").innerHTML = `
+      <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`
       if (postTitleElement && mainTitle) {
-         mainTitle.innerText = postTitleElement.textContent.trim();
-      }
-
-      if (postlink && postimg && imgbox) {
-         imgbox.innerHTML = `
-            <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`;
+         const titleText = postTitleElement.textContent.trim();
+         mainTitle.innerText = titleText;
       }
    }
 });
 
-const iframe = document.getElementById("comments");
-if (iframe) {
-   iframe.onload = function () {
-      try {
-         const doc = iframe.contentDocument || iframe.contentWindow.document;
+(function(){
+   const host = document.getElementById('comments');
+   const src = host.getAttribute('data-src');
+    const iframe = document.createElement('iframe');
+   iframe.className = 'comments-frame';
+   iframe.src = src;
+   host.appendChild(iframe);
+ 
+   function adjustHeight(){
+     try {
+       const idoc = iframe.contentDocument || iframe.contentWindow.document;
+       const body = idoc.body, html = idoc.documentElement;
+       const h = Math.max(
+         body.scrollHeight, body.offsetHeight,
+         html.clientHeight, html.scrollHeight, html.offsetHeight
+       );
+       iframe.style.height = h + 'px';
+     } catch(e) {}
+   }
+ 
+   iframe.addEventListener('load', ()=>{
+     try {
+       const idoc = iframe.contentDocument || iframe.contentWindow.document;
+        const css = `
+       @import url('https://v1.fontapi.ir/css/Shabnam');
 
-         // تزریق استایل
-         const style = doc.createElement("style");
-         style.textContent = `@import url('https://v1.fontapi.ir/css/Shabnam');
+       * {
+          font-family: 'Shabnam', Tahoma, sans-serif;
+          border: none !important;
+          box-sizing: border-box;
+          border-radius: 0 !important;
+          color: var(--color1) !important;
+       }
 
-         * {
-            font-family: 'Shabnam', Tahoma, sans-serif;
-            border: none !important;
-            box-sizing: border-box;
-            border-radius: 0 !important;
-            color: var(--color1) !important;
-         }
+       body {
+          background: none;
+       }
 
-         body {
-            background: none;
-         }
+       #header,
+       input[name="cmtemail"],
+       label[for="cmtemail"],
+       span:first-child,
+       input[type="checkbox"],
+       label[for="chkPrivate"],
+       label[for="chkSave"],
+       a[style="font-size:8pt"] {
+          display: none;
+       }
 
-         #header,
-         input[name="cmtemail"],
-         label[for="cmtemail"],
-         span:first-child,
-         input[type="checkbox"],
-         label[for="chkPrivate"],
-         label[for="chkSave"],
-         a[style="font-size:8pt"] {
-            display: none;
-         }
+       #content {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 900px;
+          max-width: 100%;
+       }
 
-         #content {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 900px;
-            max-width: 100%;
-         }
+       input,
+       textarea {
+          outline: 0 !important;
+          box-shadow: none !important;
+          background: var(--color53);
+          padding: 10px !important;
+          margin: 5px 0;
+       }
 
-         input,
-         textarea {
-            outline: 0 !important;
-            box-shadow: none !important;
-            background: var(--color53);
-            padding: 10px !important;
-            margin: 5px 0;
-         }
+       .box,
+       .formbox {
+          padding: 10px;
+          box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+          box-sizing: border-box;
+          background: var(--color2) !important;
+       }
 
-         .box,
-         .formbox {
-            padding: 10px;
-            box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
-            box-sizing: border-box;
-            background: var(--color2) !important;
-         }
+       .formbox .head {
+          font-size: 20px !important;
+          color: var(--color5) !important;
+          background: none !important;
+          font-weight: bold;
+       }
 
-         .formbox .head {
-            font-size: 20px !important;
-            color: var(--color5) !important;
-            background: none !important;
-            font-weight: bold;
-         }
+       .box .author {
+          font-size: 16px !important;
+          color: var(--color1) !important;
+       }
 
-         .box .author {
-            font-size: 16px !important;
-            color: var(--color1) !important;
-         }
+       .reply .rbox {
+          background: var(--color3);
+       }
 
-         .reply .rbox {
-            background: var(--color3);
-         }
+       .btn {
+          background: var(--color5) !important;
+          padding: 10px 0 !important;
+          width: 100% !important;
+          height: 40px !important;
+          font-weight: bold;
+          font-size: 14px;
+          cursor: pointer;
+       }
 
-         .btn {
-            background: var(--color5) !important;
-            padding: 10px 0 !important;
-            width: 100% !important;
-            height: 40px !important;
-            font-weight: bold;
-            font-size: 14px;
-            cursor: pointer;
-         }
+       .btn:hover {
+          background: #3E5F36 !important;
+       }
 
-         .btn:hover {
-            background: #3E5F36 !important;
-         }
+       A {
+          COLOR: var(--color5) !important;
+          transition: 0.3s;
+       }
 
-         A {
-            COLOR: var(--color5) !important;
-            transition: 0.3s;
-         }
+       A:hover {
+          COLOR: #3E5F36 !important;
+       }
 
-         A:hover {
-            COLOR: #3E5F36 !important;
-         }
+       #capspace {
+          margin-top: -30px !important;
+       }
+       `;
+       const styleEl = idoc.createElement('style');
+       styleEl.textContent = css;
+       idoc.head.appendChild(styleEl);
+ 
+       adjustHeight();
+       new MutationObserver(adjustHeight).observe(idoc.body, {childList:true,subtree:true,characterData:true});
+       if (iframe.contentWindow.ResizeObserver) {
+         new iframe.contentWindow.ResizeObserver(adjustHeight).observe(idoc.documentElement);
+       }
+     } catch(e) {}
+   });
+ 
+   // fallback
+   setInterval(adjustHeight, 800);
+ })();
 
-         #capspace {
-            margin-top: -30px !important;
-         }`;
-         doc.head.appendChild(style);
+/*
+window.onload = function () {
+   document.querySelectorAll(".iframe").forEach(container => {
+      const src = container.getAttribute("data-src");
+      if (!src) return;
 
-         const resizeIframe = () => {
-            const body = doc.body;
-            const html = doc.documentElement;
-            const height = Math.max(
-               body.scrollHeight, body.offsetHeight,
-               html.clientHeight, html.scrollHeight, html.offsetHeight
-            );
-            iframe.style.height = height + "px";
-            console.log("Calculated height:", height);
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      iframe.style.border = "0";
+      iframe.style.display = "block";
+      iframe.style.width = "100%";
+
+      container.appendChild(iframe);
+
+      if (container.id === "comments") {
+         iframe.onload = function () {
+            try {
+               const doc = iframe.contentDocument || iframe.contentWindow.document;
+
+               const style = doc.createElement("style");
+               style.textContent = `
+               @import url('https://v1.fontapi.ir/css/Shabnam');
+
+               * {
+                  font-family: 'Shabnam', Tahoma, sans-serif;
+                  border: none !important;
+                  box-sizing: border-box;
+                  border-radius: 0 !important;
+                  color: var(--color1) !important;
+               }
+
+               body {
+                  background: none;
+               }
+
+               #header,
+               input[name="cmtemail"],
+               label[for="cmtemail"],
+               span:first-child,
+               input[type="checkbox"],
+               label[for="chkPrivate"],
+               label[for="chkSave"],
+               a[style="font-size:8pt"] {
+                  display: none;
+               }
+
+               #content {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  width: 900px;
+                  max-width: 100%;
+               }
+
+               input,
+               textarea {
+                  outline: 0 !important;
+                  box-shadow: none !important;
+                  background: var(--color53);
+                  padding: 10px !important;
+                  margin: 5px 0;
+               }
+
+               .box,
+               .formbox {
+                  padding: 10px;
+                  box-shadow: 0 2px 5px rgb(0 0 0 / 5%);
+                  box-sizing: border-box;
+                  background: var(--color2) !important;
+               }
+
+               .formbox .head {
+                  font-size: 20px !important;
+                  color: var(--color5) !important;
+                  background: none !important;
+                  font-weight: bold;
+               }
+
+               .box .author {
+                  font-size: 16px !important;
+                  color: var(--color1) !important;
+               }
+
+               .reply .rbox {
+                  background: var(--color3);
+               }
+
+               .btn {
+                  background: var(--color5) !important;
+                  padding: 10px 0 !important;
+                  width: 100% !important;
+                  height: 40px !important;
+                  font-weight: bold;
+                  font-size: 14px;
+                  cursor: pointer;
+               }
+
+               .btn:hover {
+                  background: #3E5F36 !important;
+               }
+
+               A {
+                  COLOR: var(--color5) !important;
+                  transition: 0.3s;
+               }
+
+               A:hover {
+                  COLOR: #3E5F36 !important;
+               }
+
+               #capspace {
+                  margin-top: -30px !important;
+               }
+          `;
+               doc.head.appendChild(style);
+
+               setInterval(() => {
+                  iframe.style.height = doc.body.scrollHeight + "px";
+               }, 500);               
+
+            } catch (e) {
+               console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
+            }
          };
-
-         setTimeout(resizeIframe, 200);
-         setInterval(resizeIframe, 500);
-
-      } catch (e) {
-         console.error("خطا در آیفریم:", e);
       }
-   };
-}
-
-               
+   });
+}; */
 
 const navbar = document.getElementById('header');
 window.addEventListener('scroll', () => {
