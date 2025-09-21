@@ -745,7 +745,6 @@ body.post-page #posts .swiper-slide .iframe {
    max-width: 100% !important;
    text-align: right;
    display: block;
-   height: auto !important;
    min-height: 500px;
 }
 
@@ -762,7 +761,6 @@ iframe {
    width: 100%;
    display: block;
    width: 100% !important;
-   height: auto !important;
    min-height: 500px;
 }
 
@@ -891,3 +889,4 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
