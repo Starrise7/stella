@@ -95,7 +95,7 @@ window.onload = function () {
                * {
                   font-family: 'Shabnam', Tahoma, sans-serif;
                   border: none !important;
-                  box-sizing: border-box;
+                  box-sizing: border-box !important;
                   border-radius: 0 !important;
                   color: var(--color1) !important;
                }
@@ -127,7 +127,7 @@ window.onload = function () {
                textarea {
                   outline: 0 !important;
                   box-shadow: none !important;
-                  background: var(--color53);
+                  background: var(--color3);
                   padding: 10px !important;
                   margin: 5px 0;
                }
