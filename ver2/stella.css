@@ -722,7 +722,8 @@ body.other-page #posts .swiper-button-next,
 body.special-page #posts .swiper-button-prev,
 body.other-page #posts .swiper-button-prev,
 body.post-page .post-title,
-body.post-page #postlink {
+body.post-page #postlink,
+body.other-page h2 {
    display: none !important;
 }
 
@@ -889,4 +890,5 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
 
