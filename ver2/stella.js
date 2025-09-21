@@ -174,9 +174,14 @@ window.onload = function () {
           `;
                doc.head.appendChild(style);
 
-               setInterval(() => {
+               const updateHeight = () => {
                   iframe.style.height = doc.body.scrollHeight + "px";
-               }, 500);               
+               };
+               
+               updateHeight();
+               
+               new ResizeObserver(updateHeight).observe(doc.body);
+                           
 
             } catch (e) {
                console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
