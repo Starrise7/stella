@@ -749,7 +749,7 @@ body.post-page #posts .swiper-slide .iframe {
 }
 
 body.post-page #posts .swiper{
-   height: auto;
+   height: auto !important;
 }
 
 body.post-page #posts .swiper-slide {
@@ -890,5 +890,6 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
 
 
