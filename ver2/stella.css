@@ -456,7 +456,7 @@ h1 {
 }
 
 #posts .swiper-slide .info i,
-#customization i {
+.customization i {
    color: var(--color5);
 }
 
@@ -466,7 +466,7 @@ h1 {
    height: auto;
 }
 
-#customization {
+.customization {
    font-size: 20px;
    width: 100%;
    display: flex;
@@ -718,8 +718,10 @@ body.post-page #best,
 body.post-page #about,
 body.post-page #whyme,
 body.other-page #catgory,
+body.other-page #best,
+body.other-page #about,
+body.other-page #whyme,
 body.other-page .hero-text,
-body.post-page .section .title,
 body.post-page button.readmore,
 body.special-page #posts .swiper-button-next,
 body.other-page #posts .swiper-button-next,
@@ -727,8 +729,9 @@ body.special-page #posts .swiper-button-prev,
 body.other-page #posts .swiper-button-prev,
 body.post-page .post-title,
 body.post-page #postlink,
-body.other-page h2,
-body.other-page #imgbox .column,
+body.other-page .section h2,
+body.other-page .section h2,
+body.special-page #imgbox .column,
 body.special-page #imgbox .column {
    display: none !important;
 }
@@ -843,27 +846,18 @@ iframe {
    }
 }
 
-input {
+input, textarea {
    outline: 0;
-   background: #F4F4F0;
-   border-radius: 10px;
+   background: var(--color3);
    border: 0;
    padding: 10px 20px;
    max-width: 100%;
-   box-sizing: border-box;
 }
 
 textarea {
    width: 300px;
    height: 150px;
-   outline: 0;
-   background: #F4F4F0;
-   border-radius: 10px;
-   border: 0;
-   padding: 10px 20px;
    resize: none;
-   max-width: 100%;
-   box-sizing: border-box;
 }
 
 textarea::-webkit-scrollbar{
@@ -883,7 +877,7 @@ input[type="color"] {
    padding: 10px 0;
    color: white;
    width: 100px;
-   border-radius: 10px;
+   border-radius: 0;
    font-weight: bold;
    font-size: 14px;
 }
