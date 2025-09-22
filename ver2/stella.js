@@ -213,7 +213,11 @@ window.onload = function () {
                updateHeight();
 
                new ResizeObserver(updateHeight).observe(doc.body);
-
+               const closeLink = doc.querySelector('a[href="javascript:window.close();"]');
+               if (closeLink) {
+                  closeLink.textContent = "بازگشت به صفحه نظرات";
+                  closeLink.href = src;
+               }
 
             } catch (e) {
                console.error("خطا در تغییر CSS آیفریم کامنت‌ها:", e);
