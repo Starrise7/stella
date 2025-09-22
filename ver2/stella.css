@@ -740,7 +740,7 @@ body.other-page #main-title {
    font-size: 32px;
    font-weight: bolder;
 }
-#posts .swiper
+
 body.post-page .hidden {
    display: block;
 }
@@ -897,3 +897,4 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
