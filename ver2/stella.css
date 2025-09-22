@@ -868,6 +868,7 @@ input[type="color"] {
    padding: 0;
    width: 70px;
    background: 0;
+   height: 50px;
 }
 
 .row button {
@@ -898,3 +899,4 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
