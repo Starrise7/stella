@@ -130,12 +130,12 @@
 
 ::selection {
    background: var(--color5);
-   color: var(--color2);
+   color: white;
 }
 
 ::-moz-selection {
    background: var(--color5);
-   color: var(--color2);
+   color: white;
 }
 
 /* تگ های آماده */
@@ -472,6 +472,7 @@ h1 {
    display: flex;
    gap: 10px;
    font-weight: bold;
+   margin: 10px 0;
 }
 
 .info {
@@ -828,23 +829,6 @@ iframe {
       flex-direction: column;
    }
 }
-.main{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
-   max-width: 100%;
-}
-
-@media screen and (max-width: 400px) {
-   .row{
-      flex-direction: column;
-      gap: 5px !important;
-   }
-
-   .main{
-      gap: 5px;
-   }
-}
 
 input, textarea {
    outline: 0;
@@ -852,6 +836,7 @@ input, textarea {
    border: 0;
    padding: 10px 20px;
    max-width: 100%;
+   color: var(--color1);
 }
 
 textarea {
@@ -868,7 +853,7 @@ input[type="color"] {
    padding: 0;
    width: 70px;
    background: 0;
-   height: 50px;
+   height: 30px;
 }
 
 .row button {
@@ -892,6 +877,7 @@ input[type="color"] {
    align-items: center;
    gap: 30px;
    max-width: 100%;
+   flex-wrap: wrap;
 }
 
 .knowmore{
@@ -899,4 +885,3 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
-
