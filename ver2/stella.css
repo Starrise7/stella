@@ -766,7 +766,7 @@ body.post-page #posts .swiper{
 body.post-page #posts .swiper-slide {
    width: 900px;
    max-width: 100% !important;
-   margin-left: 0;
+   margin-left: 0 !important;
    height: auto !important;
    margin-bottom: 20px;
 }
