@@ -290,7 +290,7 @@ h1 {
 
 .hero {
    background: var(--color2);
-   padding: 10%;
+   padding: 0 10%;
    gap: 32px;
 }
 
@@ -504,7 +504,7 @@ h1 {
 
 .tags a:hover {
    background: var(--color5);
-   color: var(--color2);
+   color: white;
 }
 
 
@@ -727,7 +727,9 @@ body.special-page #posts .swiper-button-prev,
 body.other-page #posts .swiper-button-prev,
 body.post-page .post-title,
 body.post-page #postlink,
-body.other-page h2 {
+body.other-page h2,
+body.other-page #imgbox .column,
+body.special-page #imgbox .column {
    display: none !important;
 }
 
@@ -735,6 +737,11 @@ body.post-page #posts .swiper-slide:hover>.content {
    transform: none;
    padding-top: 0;
 }
+
+body.post-page .hero {
+   padding: 5% 10%;
+}
+
 body.other-page #main-title {
    color: var(--color1);
    font-size: 32px;
@@ -897,4 +904,3 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
-
