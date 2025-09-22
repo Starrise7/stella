@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const postlink = document.getElementById("postlink");
       const postimg = document.getElementById("postimg");
       document.getElementById("imgbox").innerHTML = `
-      <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" loading="lazy"></a>`
+      <a href="${postlink.href}"><img src="${postimg.src}" alt="${postimg.alt}" width="500"></a>`
       if (postTitleElement && mainTitle) {
          const titleText = postTitleElement.textContent.trim();
          mainTitle.innerText = titleText;
@@ -98,6 +98,26 @@ window.onload = function () {
                   box-sizing: border-box !important;
                   border-radius: 0 !important;
                   color: var(--color1) !important;
+               }
+
+               ::-webkit-scrollbar {
+                  background: none;
+                  width: 7px;
+                  height: 7px;
+               }
+               
+               ::-webkit-scrollbar-thumb {
+                  background: var(--color5);
+               }
+               
+               ::selection {
+                  background: var(--color5);
+                  color: var(--color2);
+               }
+               
+               ::-moz-selection {
+                  background: var(--color5);
+                  color: var(--color2);
                }
 
                body {
@@ -164,6 +184,7 @@ window.onload = function () {
                   font-weight: bold;
                   font-size: 14px;
                   cursor: pointer;
+                  color: white;
                }
 
                .btn:hover {
