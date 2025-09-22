@@ -184,7 +184,7 @@ window.onload = function () {
                   font-weight: bold;
                   font-size: 14px;
                   cursor: pointer;
-                  color: white;
+                  color: white !important;
                }
 
                .btn:hover {
