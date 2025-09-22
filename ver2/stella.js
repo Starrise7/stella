@@ -359,3 +359,41 @@ bell.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
    notifBox.style.display = "none";
 });
+
+const menu = document.getElementById("menu");
+const black = document.getElementById("black");
+black.style.display = "none";
+function openMenu() {
+   if (black.style.display === "none") {
+      black.style.display = "flex";
+      menu.innerHTML = "<i class='fa-solid fa-xmark'></i>"
+   }
+   else {
+      black.style.display = "none";
+      menu.innerHTML = "<i class='fa-solid fa-bars'></i>"
+   }
+}
+
+const notifs = [
+   {
+      title : "عنوان اعلان",
+      date : "دوشنبه بیست و چهارم شهریور ۱۴۰۴" ,
+      content : `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti magni possimus amet! Sequi quo
+      perspiciatis ex dolores porro iste et, aperiam totam veniam facere, quis ducimus aspernatur, ipsam ea.`
+   }
+];
+const scrollbox = document.getElementById("scrollbox");
+let html = "";
+notifs.forEach(notif => {
+   html += `
+   <div class="notif">
+      <div class="flex spacebtwn padding aligncenter">
+         <span class="title">${notif.title}</span>
+         <span class="date">${notif.date}</span>
+      </div>
+      <div class="content">${notif.content}</div>
+   </div>
+   `;
+});
+
+scrollbox.innerHTML = html;
