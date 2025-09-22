@@ -1,0 +1,45 @@
+document.getElementById("customization").innerHTML = `
+   <div class="row"><label>عکس پسزمینه</label><input type="text" id="bgurl"><br></div>
+   <div class="row"><label>رنگ پسزمینه</label><input type="color" id="bgcolor" value="#f8f8f8"><br></div>
+   <div class="row"><label>رنگ کلی قالب</label><input type="color" id="color" value="#bbb5d4"><br></div>
+   <div class="row"><label>عکس هدر</label><input type="text" id="header" value="https://s8.uupload.ir/files/head_tady.png"><br></div>
+
+   <div class="row">
+   <button onclick="generateCode()">ساخت کد</button><button id="copyBtn" onclick="copyCode()" style="visibility: hidden;">کپی کد</button><br></div>
+
+   <textarea style="visibility: hidden;" id="output" rows="10" cols="60" readonly></textarea>`
+function generateCode() {
+   const bgurl = document.getElementById("bgurl").value;
+   const bgcolor = document.getElementById("bgcolor").value;
+   const color = document.getElementById("color").value;
+   const header = document.getElementById("header").value;
+   const code = `
+<!DOCTYPE html> <html> <head>
+<!-- Theme BY : Stella.BlogFa.Com -->
+<link href="<-BlogPhotoLink->" rel="shortcut icon"> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title><-BlogAndPostTitle-></title> <meta http-equiv="content-language" content="fa"> <meta name="description" content="<-BlogMetaDescription->"> <meta name="generator" content="blogfa.com"> <meta property="og:title" content="<-AutoPageTitle->"> <meta property="og:site_name" content="<-BlogTitle->"> <meta property="og:description" content="<-BlogMetaDescription->"> <meta name="twitter:title" content="<-AutoPageTitle->"> <meta name="twitter:description" content="<-BlogMetaDescription->"> <link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" /> <link href='http://fonts.googleapis.com/css?family=Handlee|Fira+Sans|Englebert|Ribeye+Marrow|Sacramento' rel='stylesheet' type='text/css'> <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" type="text/css" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> <style>
+      :root{
+         /* رنگ کلی قالب */
+         --themecolor: ${color};
+
+         /* عکس هدر */
+         --header: url(${header}) no-repeat;
+
+         /* بکگراند */
+         --background: ${bgcolor} url(${bgurl}) fixed;
+      }
+img, p, div, table, td, tr, a, hr, span, ul, ol { max-width: 100%; height: auto; } ::selection { background: var(--themecolor); color: #fff; } ::-moz-selection { background: var(--themecolor); color: #fff; } ::-webkit-scrollbar { width: 11px; } ::-webkit-scrollbar-track { background: #eee; border: 4px solid #fff; } ::-webkit-scrollbar-thumb { background: #aaa; border: 4px solid #fff; } * { margin: 0px auto; padding: 0px; line-height: 2; transition: 0.5s; } body { background: var(--background); text-align: center; font-family: Fira Sans, 'Baloo Bhaijaan 2'; font-size: 13px; color: #888; direction: rtl; } #stella { min-height: 550px; width: 640px; margin-bottom: 50px; margin-top: 50px; max-width: 100%; } #header { background: var(--header); background-size: cover; width: 100%; height: 240px; border-radius: 5px 5px 0 0; } A { color: #666; text-decoration: none; font-weight: bold; } A:hover { color: #000; } .lft { width: 10%; min-height: 100%; text-align: center; } .lft img { position: sticky; top: 20px; border-radius: 50%; background: #eee; background-size: cover; width: 50px; max-width: 100%; height: auto; } .ryt { width: 84%; min-height: 100px; } .post { width: 100%; background: #fff; padding: 30px 20px; line-height: 150%; border-bottom: 1px solid #eee; text-align: right; box-sizing: border-box; display: flex; justify-content: space-between; } .post .top a { font-size: 13px; } .post .but a { color: #ccc; font-weight: normal; padding: 0px 10px 0px 5px; } h1 a { color: #666; display: inline-block; padding: 5px 0px; } .texttype, .texttype a { color: #ccc; display: inline-block; font-size: 13px; font-weight: normal; margin-bottom: 7px; } .texttype2 { font-size: 13px; font-weight: normal; } .menu a { padding: 10px 0px 10px 10px; color: #888888; } .menu a:hover { color: var(--themecolor); } a.button { float: left; color: var(--themecolor); border: 1px solid var(--themecolor); padding: 3px 35px; border-radius: 30px; } a.button:hover { color: #fff; background: var(--themecolor); } .posttag a { color: var(--themecolor); padding: 5px 5px 5px 0px; text-align: center; margin-top: 10px; } .left { font-weight: normal; padding-left: 50px; float: left; } .right { font-weight: normal; padding-right: 50px; float: right; } .center{ text-align: center; } @media (max-width: 500px) { .post{ padding: 20px 10px; } .left{ padding-left: 10px; } .right{ padding-right: 10px; } } </style> \u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0073\u0072\u0063\u003d\u0022\u0068\u0074\u0074\u0070\u003a\u002f\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0062\u006c\u006f\u0067\u0066\u0061\u002e\u0063\u006f\u006d\u002f\u0070\u0075\u0062\u006c\u0069\u0063\u002f\u0074\u0068\u0065\u006d\u0065\u002e\u0031\u002e\u0032\u002e\u006a\u0073\u0022\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e\u0020\u003c\u0073\u0063\u0072\u0069\u0070\u0074\u0020\u0074\u0079\u0070\u0065\u003d\u0022\u0074\u0065\u0078\u0074\u002f\u006a\u0061\u0076\u0061\u0073\u0063\u0072\u0069\u0070\u0074\u0022\u003e\u0020\u0074\u0072\u0079\u0020\u007b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0030\u005d\u0020\u003d\u0020\u0022\u002b\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0031\u005d\u0020\u003d\u0020\u0022\u0030\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0032\u005d\u0020\u003d\u0020\u0022\u0031\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0063\u0061\u0070\u0074\u0069\u006f\u006e\u005b\u0033\u005d\u0020\u003d\u0020\u0022\u0022\u003b\u0020\u0063\u006d\u0074\u005f\u0062\u006c\u006f\u0067\u0069\u0064\u0020\u003d\u0020\u0022\u003c\u002d\u0042\u006c\u006f\u0067\u0049\u0064\u002d\u003e\u0022\u003b\u0020\u007d\u0020\u0063\u0061\u0074\u0063\u0068\u0020\u0028\u0065\u0029\u0020\u007b\u0020\u007d\u0020\u003c\u002f\u0073\u0063\u0072\u0069\u0070\u0074\u003e </head> <body> <div id="stella"> <div id="header"></div> <!-- end header --> <div class="post"> <div class="lft"> <img alt="" width="50" height="50" src="<-BlogPhotoLink->" /> </div> <div class="ryt"> <a class="button" href="<-BlogUrl->"> Home </a> <h1><a href="<-BlogUrl->" style="font-size:16px"> <-BlogTitle-> </a></h1> <h2 class="texttype">@<-BlogDescription-> </h2> <BlogProfile><p class="texttype2"> <-BlogAbout-> </p></BlogProfile> <p class="texttype">♡ <-BlogAuthor-> @ <-BlogId-> </p> <div class="menu"> <a title="<-BlogTitle->" href="<-BlogUrl->">Home</a> <BlogProfileLinkBlock><a href="<-BlogProfileLink->">Profile</a></BlogProfileLinkBlock> <BlogEmailBlock><a href="mailto:<-BlogEmail->"> Email</a></BlogEmailBlock> <a href="<-BlogArchiveLink->">Archive</a> <a href="/posts/">Posts</a> <a href="/rss">RSS</a> <a href="http://stella.blogfa.com">Theme BY</a> </div> </div> </div> <BLOGFA> <div class="post"> <div class="lft"> <img width="50" height="50" src="<-BlogPhotoLink->"/> </div> <div class="ryt"> <div class="top"> <h4><a href="<-PostLink->"> <-PostTitle-> </a></h4> <p class="texttype"><a href="<-PostAuthorLink->">@<-PostAuthor-></a>- <-PostDate-> <-PostTime-></p> </div> <-PostContent-> <div class="posttag"> <BlogPostTagsBlock> <BlogPostTags><a href="<-TagLink->">#<-TagName-></a></BlogPostTags> </BlogPostTagsBlock> </div> <div class="but"> <BlogComment><i class="fas fa-comment"></i><span dir="rtl" comment-for="<-PostId->"></span> </BlogComment> <BlogExtendedPost> <a href="<-PostLink->">more...</a></BlogExtendedPost> </div> </div> </div> </BLOGFA> <BlogNextAndPreviousBlock> <div class="post center"> <BlogPreviousPageBlock> <a href="<-BlogPreviousPageLink->" class="right">previous page</a> </BlogPreviousPageBlock> <a href="http://stella.blogfa.com"> استلا &#9733; Stella</a> <BlogNextPageBlock> <a href="<-BlogNextPageLink->" class="left">next page</a> </BlogNextPageBlock> </div> </BlogNextAndPreviousBlock> <div class="post center"> <-BlogCustomHtml-> </div> </div>
+<!-- Theme BY : Stella.BlogFa.Com -->
+</body> </html>
+   `.trim();
+
+   document.getElementById("output").value = code;
+   document.getElementById("copyBtn").style.visibility = "visible";
+   document.getElementById("output").style.visibility = "visible";
+}
+
+function copyCode() {
+   const output = document.getElementById("output");
+   navigator.clipboard.writeText(output.value).then(() => {
+      alert("کد کپی شد!");
+   });
+}
