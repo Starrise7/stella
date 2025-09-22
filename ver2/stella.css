@@ -198,7 +198,7 @@ header {
    position: sticky;
    top: 0;
    z-index: 2;
-   border-bottom: 2px solid var(--color2);
+   border-bottom: 2px solid var(--color3);
    background: var(--color4);
    backdrop-filter: blur(20px);
    -webkit-backdrop-filter: blur(20px);
@@ -290,8 +290,12 @@ h1 {
 
 .hero {
    background: var(--color2);
-   padding: 0 10% 50px 10%;
+   padding: 10%;
    gap: 32px;
+}
+
+.hero > *{
+   flex: 1;
 }
 
 .hero .column {
@@ -475,30 +479,30 @@ h1 {
    width: 100%;
 }
 
-.info .tags {
+.tags {
    display: flex;
    gap: 10px;
    flex-wrap: wrap;
 }
 
-.info .tags a,
-.info .tags span {
+.tags a,
+.tags span {
    background: var(--color3);
    color: var(--color1);
    padding: 5px 10px 3px 10px;
    border-radius: 5px;
 }
 
-.info .tags a {
+.tags a {
    font-size: 10px;
 }
 
-.info .tags span {
+.tags span {
    font-size: 14px;
 }
 
 
-.info .tags a:hover {
+.tags a:hover {
    background: var(--color5);
    color: var(--color2);
 }
@@ -609,7 +613,7 @@ button.preview {
 
 #about .flex {
    background: var(--color5);
-   margin-top: -8px;
+   margin-top: -10px;
    color: #FFFFFF;
    padding: 20px;
    flex-wrap: wrap;
@@ -622,7 +626,7 @@ button.preview {
 
 #catgory div {
    flex-wrap: wrap;
-   gap: 40px
+   gap: 60px
 }
 
 #catgory a {
@@ -667,7 +671,7 @@ footer {
    background: #2B2B2B;
    color: #FFFFFF;
    text-align: center;
-   margin-top: -8px;
+   margin-top: -10px;
 }
 
 footer a {
@@ -736,7 +740,7 @@ body.other-page #main-title {
    font-size: 32px;
    font-weight: bolder;
 }
-
+#posts .swiper
 body.post-page .hidden {
    display: block;
 }
@@ -749,12 +753,15 @@ body.post-page #posts .swiper-slide .iframe {
 }
 
 body.post-page #posts .swiper{
-   height: auto !important;
+   height: auto;
 }
 
 body.post-page #posts .swiper-slide {
    width: 900px;
    max-width: 100% !important;
+   margin-left: 0;
+   height: auto !important;
+   margin-bottom: 20px;
 }
 
 body.post-page #posts .swiper-slide {
@@ -890,6 +897,3 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
-
-
-
