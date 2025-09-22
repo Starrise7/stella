@@ -1,7 +1,7 @@
 * {
    margin: 0;
    padding: 0;
-   transition: 0.4s ease-in-out;
+   transition: 0.4s ease-in-out !important;
    font-family: var(--font);
    box-sizing: border-box;
    max-width: 100%;
@@ -24,7 +24,7 @@
    height: 45px;
    width: 45px;
    gap: 5px;
-   z-index: 2;
+   z-index: 3;
    box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px 0;
 }
 
@@ -57,8 +57,7 @@
    height: 100%;
    width: 100%;
    background: rgba(0, 0, 0, 0.3);
-   z-index: 5;
-   display: flex;
+   z-index: 999;
    justify-content: center;
    align-items: center;
    display: none;
@@ -97,6 +96,14 @@
    padding: 10px;
 }
 
+#notifBox .box .notif .title{
+   font-size: 18px;
+}
+#notifBox .box .notif .date{
+   font-size: 12px;
+   color: gray;
+}
+
 #closeBtn{
    padding: 10px;
    cursor: pointer;
@@ -115,7 +122,7 @@
    --color1: #E0E0E0;
    --color2: #2B2B2B;
    --color3: #1A1A1A;
-   --color4: rgba(0, 0, 0, 0.8);
+   --color4: rgba(43, 43, 43, 0.8);
 }
 
 ::-webkit-scrollbar {
@@ -197,9 +204,9 @@ header {
    color: var(--color1);
    position: sticky;
    top: 0;
-   z-index: 2;
-   border-bottom: 2px solid var(--color3);
-   background: var(--color4);
+   z-index: 3;
+   border-bottom: 2px solid var(--color2);
+   background: var(--color2);
    backdrop-filter: blur(20px);
    -webkit-backdrop-filter: blur(20px);
 }
@@ -215,6 +222,7 @@ header a span {
 
 #header.scrolled {
    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+   background: var(--color4);
 }
 
 nav {
@@ -227,7 +235,7 @@ nav a {
 }
 
 nav a:hover {
-   color: var(--color2);
+   color: white;
    background: var(--color5);
 }
 
@@ -240,9 +248,9 @@ nav a:hover {
 }
 
 .floatbox {
-   position: absolute;
+   position: fixed;
    top: 91px;
-   left: 30px;
+   left: 267px;
    visibility: hidden;
    opacity: 0;
    background: var(--color2);
@@ -253,19 +261,48 @@ nav a:hover {
 .floatbox a {
    padding: 10px;
    border-radius: 10px;
+   text-align: center;
 }
 
 .floatbox a:hover {
-   color: var(--color2);
+   color: white;
    background: var(--color5);
 }
 
-#menu:hover>.floatbox {
+.dropdown:hover .floatbox {
    top: 63px;
    visibility: visible;
    opacity: 1;
 }
 
+.dropdown{
+   margin-top: 5px;
+}
+#black{
+   background: rgba(0, 0, 0, 0.3);
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   left: 0;
+   top: 75px;
+   z-index: 5;
+   justify-content: left;
+   display: none;
+}
+.menu{
+   padding: 20px;
+   background: var(--color2);
+   height: 100vh;
+   width: 300px;
+}
+
+.mright{
+   padding: 10px 30px 10px;
+   font-size: 14px;
+}
+summary{
+   cursor: pointer;
+}
 .logo a {
    gap: 20px;
 }
@@ -799,9 +836,6 @@ iframe {
    #whyme article.flex{
       flex-wrap: wrap;
    }
-}
-
-@media screen and (max-width: 600px) {
    nav.flex {
       display: none;
    }
@@ -809,7 +843,9 @@ iframe {
    #menu {
       display: block;
    }
+}
 
+@media screen and (max-width: 600px) {
    .sectionbar {
       padding: 0;
    }
