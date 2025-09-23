@@ -317,13 +317,6 @@ function openStar() {
       star.innerHTML = "<i class='fa-solid fa-star'></i>"
    }
 }
-
-
-const playlist = [
-   "https://uploadkon.ir/uploads/e64f01_25Beach-Weather-Deadbeat-Blues.mp3",
-   "https://uploadkon.ir/uploads/488b01_25Beach-Weather-Tulips.mp3",
-   "https://uploadkon.ir/uploads/05c301_25Beach-Weather-Brain-Dead.mp3"
-];
 const player = document.getElementById("player");
 let currentIndex = Math.floor(Math.random() * playlist.length);
 player.src = playlist[currentIndex];
@@ -345,7 +338,7 @@ player.addEventListener("ended", () => {
 
 const bell = document.getElementById("bell");
 const notifBox = document.getElementById("notifBox");
-const latestMessageId = "fjhjiueh";
+const latestMessageId = "m1";
 const lastReadId = localStorage.getItem("lastReadMessageId");
 const closeBtn = document.getElementById("closeBtn");
 if (lastReadId === latestMessageId) {
@@ -377,15 +370,6 @@ function openMenu() {
       menu.innerHTML = "<i class='fa-solid fa-bars'></i>"
    }
 }
-
-const notifs = [
-   {
-      title : "عنوان اعلان",
-      date : "دوشنبه بیست و چهارم شهریور ۱۴۰۴" ,
-      content : `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam corrupti magni possimus amet! Sequi quo
-      perspiciatis ex dolores porro iste et, aperiam totam veniam facere, quis ducimus aspernatur, ipsam ea.`
-   }
-];
 const scrollbox = document.getElementById("scrollbox");
 let html = "";
 notifs.forEach(notif => {
