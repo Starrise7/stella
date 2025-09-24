@@ -590,6 +590,25 @@ button.preview {
    align-items: center;
 }
 
+.btnbox {
+   display: flex;
+   width: 100%;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.btnbox button{
+   border: none;
+   background: var(--color5);
+   color: white;
+}
+
+.btnbox button:hover{
+   background: #3E5F36;
+   color: white;
+}
+
 #best .swiper {
    width: 100%;
    max-width: 900px;
@@ -752,6 +771,7 @@ body.other-page .swiper-wrapper {
    flex-wrap: wrap;
    overflow-x: visible;
    justify-content: center;
+   row-gap: 20px;
 }
 
 body.special-page #catgory,
@@ -807,7 +827,9 @@ body.post-page #posts .swiper-slide .iframe {
    text-align: right;
 }
 
-body.post-page #posts .swiper{
+body.post-page #posts .swiper,
+body.other-page #posts .swiper,
+body.special-page #posts .swiper{
    height: auto;
 }
 
