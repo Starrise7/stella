@@ -588,14 +588,7 @@ button.preview {
    gap: 10px;
    justify-content: center;
    align-items: center;
-}
-
-.btnbox {
-   display: flex;
-   width: 100%;
-   gap: 10px;
-   justify-content: center;
-   align-items: center;
+   margin-top: 20px;
 }
 
 .btnbox button{
@@ -950,3 +943,4 @@ input[type="color"] {
    width: 70px;
    padding: 5px 0;
 }
+
