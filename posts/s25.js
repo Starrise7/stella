@@ -1,8 +1,8 @@
 document.getElementById("customization").innerHTML = `
 <div class="row"><label>عرض باکس : </label><input type="number" id="width" value="300" min="0">px<br></div>
-<div class="row"><label>گردی گوشه : <input type="number" id="radius" value="8" min="0">px<br></div>
+<div class="row"><label>گردی گوشه : </label><input type="number" id="radius" value="8" min="0">px<br></div>
 <div class="row"><label>رنگ حاشیه : </label><input type="color" id="bcolor" value="#cccccc"><br></div>
-<div class="row"><label>ضخامت حاشیه : <input type="number" id="bwidth" value="1" min="0">px<br></div>
+<div class="row"><label>ضخامت حاشیه : </label><input type="number" id="bwidth" value="1" min="0">px<br></div>
 <div class="row"><label>رنگ باکس سرچ : </label><input type="color" id="boxcolor" value="#ffffff"><br></div>
 <div class="row"><label>رنگ متن باکس سرچ : </label><input type="color" id="boxfcolor" value="444444"><br></div>
 <div class="row"><label>رنگ آیکون دکمه سرچ : </label><input type="color" id="btnfcolor" value="#ffffff"><br></div>
@@ -44,4 +44,5 @@ function copyCode() {
 }
 function KnowMore() {
    alert("حالت هاور یعنی وقتی ماوس روی لینک می‌ره و ظاهرش تغییر می‌کنه. این حالت معمولاً فقط در لپ‌تاپ یا کامپیوتر دیده می‌شه، چون گوشی‌ها ماوس ندارن.");
+
 }
